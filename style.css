@@ -1,1 +1,58 @@
+body {
+    /* background: gray; */
+    font-family: 'Spartan', sans-serif;
+}
 /* navbar */
+.uk-navbar {
+    height: 120px;
+}
+.uk-navbar-left {
+    margin-left: 15%;
+}
+.uk-navbar-left h3 {
+    text-transform: uppercase;
+    font-family: 'Secular One', sans-serif;
+}
+.uk-navbar-left h5 {
+    font-family: 'Spartan', sans-serif;
+}
+.uk-navbar-right {
+    margin-right: 15%;
+}
+#navlist {
+    font-family: 'Spartan', sans-serif !important;
+}
+/* lead */
+.lead {
+    height: 800px;
+}
+/* coverage */
+.coverage {
+    height: 680px;
+    text-align: center;
+}
+.break {
+    margin-left: 200px;
+    width: 10%;
+    border-top: solid 4.5px black;
+}
+.coverage h1 {
+    font-family: 'Secular One', sans-serif;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+.coverage p {
+    margin-top: 75px;
+    margin-left: 200px;
+    margin-right: 75px;
+    text-align: left;
+}
+.plans-btn {
+    background-color: black !important;
+    color: white !important;
+}
+.blurb {
+    margin-top: 75px;
+}
+
+
