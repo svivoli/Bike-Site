@@ -23,6 +23,21 @@ body {
 #navlist {
     font-family: 'Spartan', sans-serif !important;
 }
+.minified-nav {
+    display: none;
+}
+@media screen and (max-width: 812px) {
+    .min-logo {
+        padding-top: 10px;
+    }
+    .minified-nav {
+        padding-top: 15px;
+        display: block;
+    }
+    .large-nav {
+        display: none;
+    }
+}
 /* lead */
 .lead {
     height: 800px;
