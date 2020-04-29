@@ -25,6 +25,11 @@ body {
 /* lead */
 .lead {
     height: 800px;
+    background-image: url('img/sunny.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 /* coverage */
 .coverage {
@@ -36,7 +41,7 @@ body {
     width: 10%;
     border-top: solid 4.5px black;
 }
-.coverage h1 {
+.blurb h1 {
     font-family: 'Secular One', sans-serif;
     text-transform: uppercase;
     font-size: 60px;
@@ -56,5 +61,64 @@ body {
 }
 /* ride */
 .ride {
-    height: 800px;
+    height: 1300px;
+    background-image: url('img/path.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.ride-title {
+    padding-top: 50px;
+    margin-right: 400px;
+}
+.break2 {
+    margin-left: 250px;
+    width: 5%;
+    border-top: solid 4.5px black;
+}
+.ride-title h1 {
+    font-family: 'Secular One', sans-serif;
+    text-transform: uppercase;
+    font-size: 60px;
+    color: white;
+}
+.cards {
+    margin-top: 120px;
+}
+.card {
+    height: 300px;
+    border-radius: 0;
+    font-family: 'Spartan', sans-serif;
+    color: white;
+}
+.card h5 {
+    padding: 30px 0 20px;
+    font-family: 'Spartan', sans-serif;
+    color: white;
+    font-weight: bold;
+}
+.card p {
+    margin: 0 25px 0 25px;
+}
+.arrow1 {
+    padding-top: 35px;
+    font-size: 28px;
+}
+.arrow {
+    padding-top: 10px;
+    font-size: 28px;
+}
+.cy {
+    background: rgb(242,190,93);
+}
+.cr {
+    background: rgb(253,96,97);
+}
+.cb {
+    background: rgb(85,111,183)
+}
+.cg {
+    background: rgb(118,203,170);
 }
