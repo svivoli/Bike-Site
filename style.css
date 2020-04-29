@@ -3,8 +3,9 @@ body {
     font-family: 'Spartan', sans-serif;
 }
 /* navbar */
-.uk-navbar {
+.uk-navbar-container {
     height: 120px;
+    background-color: white !important;
 }
 .uk-navbar-left {
     margin-left: 15%;
@@ -36,6 +37,13 @@ body {
     height: 680px;
     text-align: center;
 }
+.coverage-right {
+    height: 680px;
+    background-image: url('img/river.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .break {
     margin-left: 200px;
     width: 10%;
@@ -54,7 +62,11 @@ body {
 }
 .plans-btn {
     background-color: black !important;
+    border: none;
     color: white !important;
+}
+.plans-btn:hover {
+    color: gray !important;
 }
 .blurb {
     margin-top: 75px;
@@ -121,4 +133,17 @@ body {
 }
 .cg {
     background: rgb(118,203,170);
+}
+.story-btn {
+    margin-top: 300px;
+    height: 150px;
+    width: 150px;
+    background-color: black;
+    border: none;
+    border-radius: 50%;
+    color: white;
+}
+.story-btn:hover {
+    background-color: rgba(2, 2, 2, 0.8);
+    color: gray;
 }

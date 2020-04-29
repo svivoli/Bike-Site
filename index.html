@@ -12,8 +12,9 @@
 <body>
 
     <!-- NavBar -->
+    <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #sticky-navbar">
     
-    <nav class="uk-navbar" uk-navbar>
+    <nav class="uk-navbar-container" uk-navbar>
 
         <div class="uk-navbar-left">
     
@@ -36,6 +37,7 @@
         </div>
     
     </nav>
+</div>
 
     <section class="lead">
 
@@ -49,11 +51,11 @@
                 <h1>Coverage.</h1>
                 <p>You can now insure your bike from thieves and the elements! Whether you are a racer, commuter, or newbie - you can protect your bike today from getting stolen or broken. Our plans give riders the ease of mind by knowing they are always protected with Helmet.</p>
                 <p uk-margin>
-                    <button class="plans-btn uk-button uk-button-default" disabled>See Our Plans</button>
+                    <button class="plans-btn uk-button uk-button-default">See Our Plans</button>
                 </p>
             </div>
             <div class="col-md-6 coverage-right">
-                <img src="img/river.jpg">
+                
             </div>
         </div>
     </section>
@@ -93,6 +95,8 @@
                 </div>
             </div>
         </div>
+
+        <button class="story-btn uk-button uk-button-default">Our Story</button>
     </section>
 
     <script src="https://kit.fontawesome.com/25191fb013.js" crossorigin="anonymous"></script>
