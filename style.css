@@ -71,13 +71,15 @@ body {
 }
 .start-btn {
     margin-top: 220px;
-    background-color: black;
-    border: none;
-    color: white;
 }
-.start-btn:hover {
+.start-btn, .plans-btn, .next1 {
+    background-color: black !important;
+    border: none;
+    color: white !important;
+}
+.start-btn:hover, .story-btn:hover {
     background-color: rgba(2, 2, 2, 0.8) !important;
-    color: gray;
+    color: gray !important;
 }
 /* coverage */
 .coverage {
@@ -110,11 +112,6 @@ body {
     margin-left: 200px;
     margin-right: 75px;
     text-align: left;
-}
-.plans-btn {
-    background-color: black !important;
-    border: none;
-    color: white !important;
 }
 .plans-btn:hover {
     color: gray !important;
@@ -192,10 +189,6 @@ body {
     border-radius: 50%;
     color: white;
 }
-.story-btn:hover {
-    background-color: rgba(2, 2, 2, 0.8);
-    color: gray;
-}
 /* * Get Started * */
 /* privacy policy */
 .sign-up {
@@ -210,11 +203,19 @@ body {
 }
 .next1 {
     margin-top: 30px;
-    background-color: black;
-    border: none;
-    color: white;
 }
 .next1:hover {
     background-color: black !important;
     color: gray !important;
+}
+/* stolen */
+.stolen {
+    display: none;
+}
+.stolen h4 {
+    padding-bottom: 70px;
+    font-family: 'Spartan', sans-serif;
+}
+.stolen .far {
+    font-size: 50px;
 }
