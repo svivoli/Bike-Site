@@ -39,14 +39,19 @@ body {
     }
 }
 /* lead */
-.lead {
-    height: 800px;
+.lead, .lead2 {
     background-image: url('img/sunny.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
+}
+.lead {
+    height: 800px;
+}
+.lead2 {
+    height: 400px;
 }
 .lead-title {
     padding-top: 100px;
