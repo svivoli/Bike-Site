@@ -196,3 +196,25 @@ body {
     background-color: rgba(2, 2, 2, 0.8);
     color: gray;
 }
+/* * Get Started * */
+/* privacy policy */
+.sign-up {
+    text-align: center;
+}
+.form-content {
+    margin: 100px;
+}
+.privacy h4 {
+    padding-bottom: 30px;
+    font-family: 'Spartan', sans-serif;
+}
+.next1 {
+    margin-top: 30px;
+    background-color: black;
+    border: none;
+    color: white;
+}
+.next1:hover {
+    background-color: black !important;
+    color: gray !important;
+}
