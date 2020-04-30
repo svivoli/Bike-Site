@@ -64,6 +64,16 @@ body {
     color: white;
     font-size: 80px;
 }
+.start-btn {
+    margin-top: 220px;
+    background-color: black;
+    border: none;
+    color: white;
+}
+.start-btn:hover {
+    background-color: rgba(2, 2, 2, 0.8) !important;
+    color: gray;
+}
 /* coverage */
 .coverage {
     height: 680px;
