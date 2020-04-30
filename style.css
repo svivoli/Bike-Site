@@ -46,11 +46,27 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    text-align: center;
+}
+.lead-title {
+    padding-top: 100px;
+}
+.bold {
+    font-weight: bold;
+}
+.lead-title h5 {
+    font-family: 'Spartan', sans-serif;
+    color: white;
+}
+.lead-title h1 {
+    text-transform: uppercase;
+    font-family: 'Secular One', sans-serif;
+    color: white;
+    font-size: 80px;
 }
 /* coverage */
 .coverage {
     height: 680px;
-    text-align: center;
 }
 .coverage-right {
     height: 680px;
@@ -59,12 +75,17 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.blurb {
+    margin-top: 75px;
+}
 .break {
     margin-left: 200px;
-    width: 10%;
-    border-top: solid 4.5px black;
+    width: 50px;
+    border-top: solid 3.5px black;
 }
 .blurb h1 {
+    padding-top: 30px;
+    margin-left: 200px;
     font-family: 'Secular One', sans-serif;
     text-transform: uppercase;
     font-size: 60px;
@@ -83,9 +104,6 @@ body {
 .plans-btn:hover {
     color: gray !important;
 }
-.blurb {
-    margin-top: 75px;
-}
 /* ride */
 .ride {
     height: 1300px;
@@ -97,15 +115,16 @@ body {
     text-align: center;
 }
 .ride-title {
-    padding-top: 50px;
+    padding-top: 75px;
     margin-right: 400px;
 }
 .break2 {
     margin-left: 250px;
-    width: 5%;
+    width: 50px;
     border-top: solid 4.5px black;
 }
 .ride-title h1 {
+    padding-top: 30px;
     font-family: 'Secular One', sans-serif;
     text-transform: uppercase;
     font-size: 60px;
