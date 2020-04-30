@@ -72,7 +72,7 @@ body {
 .start-btn {
     margin-top: 220px;
 }
-.start-btn, .plans-btn, .next1 {
+.start-btn, .plans-btn, .next1, .next2, .next3 {
     background-color: black !important;
     border: none;
     color: white !important;
@@ -196,6 +196,8 @@ body {
 }
 .form-content {
     margin: 100px;
+    width: 700px;
+    display: inline-block;
 }
 .privacy h4 {
     padding-bottom: 30px;
@@ -204,7 +206,7 @@ body {
 .next1 {
     margin-top: 30px;
 }
-.next1:hover {
+.next1:hover, .next2:hover, .next3:hover {
     background-color: black !important;
     color: gray !important;
 }
@@ -218,4 +220,29 @@ body {
 }
 .stolen .far {
     font-size: 50px;
+}
+.up:hover,
+.down:hover {
+    color: gray;
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+}
+.active {
+    color: gray;
+}
+.next2 {
+    margin-top: 90px;
+}
+/* type */
+.type {
+    display: none;
+}
+.type h4, h5 {
+    font-family: 'Spartan', sans-serif;
+}
+.type h5 {
+    padding-top: 20px;
+}
+.next3 {
+    margin-top: 20px;
 }

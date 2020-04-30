@@ -2,6 +2,10 @@ const privacy = $(".privacy");
 const next1 = $(".next1");
 const agree = $(".agree");
 const stolen = $(".stolen");
+const up = $(".up");
+const down = $(".down");
+const next2 = $(".next2");
+const type = $(".type");
 
 
 next1.on("click", function(event) {
@@ -12,4 +16,16 @@ next1.on("click", function(event) {
         privacy.hide();
         stolen.show();
     }
+});
+
+$('.up, .down').on("click", function(event) {
+    event.preventDefault();
+    $('.active').removeClass('active');
+    $(this).addClass('active');
+});
+
+next2.on("click", function(event) {
+    event.preventDefault();
+    stolen.hide();
+    type.show();
 })
