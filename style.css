@@ -224,7 +224,24 @@ body {
     padding-bottom: 70px;
     font-family: 'Spartan', sans-serif;
 }
+.next2 {
+    margin-top: 90px;
+}
+/* bike-info */
+.bike-info {
+    display: none;
+}
+.bike-info h4, h5 {
+    font-family: 'Spartan', sans-serif;
+}
+.uses {
+    margin: 30px 0 30px;
+}
+.bike-info input {
+    margin: 10px;
+}
 .far {
+    margin: 30px 0 30px;
     font-size: 50px;
 }
 .up:hover,
@@ -235,19 +252,6 @@ body {
 }
 .active {
     color: gray;
-}
-.next2 {
-    margin-top: 90px;
-}
-/* type */
-.type {
-    display: none;
-}
-.type h4, h5 {
-    font-family: 'Spartan', sans-serif;
-}
-.type h5 {
-    padding-top: 20px;
 }
 .next3 {
     margin-top: 20px;

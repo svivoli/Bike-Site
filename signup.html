@@ -121,60 +121,44 @@
                     </div>
                 </div>
                 <div class="terms">
-                <p>Terms of Service <a href="#">View</a></p>
-                <p>Privacy Policy <a href="#">View</a></p>
-                <label><input class="agree uk-checkbox" type="checkbox"> Agree to Terms of Service & Privacy
-                    Policy*</label>
+                    <p>Terms of Service <a href="#">View</a></p>
+                    <p>Privacy Policy <a href="#">View</a></p>
+                    <label><input class="agree uk-checkbox" type="checkbox"> Agree to Terms of Service & Privacy
+                        Policy*</label>
                 </div>
-                
+
                 <button type="submit" class="next1 uk-button uk-button-default">Next</button>
             </div>
 
             <div class="often">
-                        <h4>How often do you ride?</h4>
-                        <input type="button" class="light uk-button uk-button-default" value="0-5 Days/Month">
-                        <input type="button"class="med uk-button uk-button-default" value="10+ Days/Month">
-                        <input type="button" class="heavy uk-button uk-button-default" value="Daily">  
-                        <br>             
+                <h4>How often do you ride?</h4>
+                <input type="button" class="light uk-button uk-button-default" value="0-5 Days/Month">
+                <input type="button" class="med uk-button uk-button-default" value="10+ Days/Month">
+                <input type="button" class="heavy uk-button uk-button-default" value="Daily">
+                <br>
                 <button type="submit" class="next2 uk-button uk-button-default">Next</button>
             </div>
 
-            <div class="type">
-                <h4>What type of bike do you have?</h4>
-                
-                    <div class="row">
-                        <div class="col-md-3">
-                            <h5>Upload a Picture</h5>
-                        </div>
-                        <div class="col-md-9">
-                            <div class="js-upload uk-placeholder uk-text-center">
-                                <span uk-icon="icon: cloud-upload"></span>
-                                <span class="uk-text-middle">Attach files by dropping them here or</span>
-                                <div uk-form-custom>
-                                    <input type="file" multiple>
-                                    <span class="uk-link">selecting one</span>
-                                </div>
-                            </div>
-
-                            <progress id="js-progressbar" class="uk-progress" value="0" max="100" hidden></progress>
-                        </div>
+            <div class="bike-info">
+                <h4>What do you use your bike for?</h4>
+                <div class="uses">
+                    <input type="button" class="com uk-button uk-button-default" value="Commuting">
+                    <input type="button" class="pls uk-button uk-button-default" value="Pleasure">
+                    <input type="button" class="exr uk-button uk-button-default" value="Exercise">
+                    <input type="button" class="rac uk-button uk-button-default" value="Racing">
+                    <input type="button" class="all uk-button uk-button-default" value="All of the above">
+                    <input type="button" class="oth uk-button uk-button-default" value="Other">
+                </div>
+                <h4>Have you ever had a bike stolen?</h4>
+                <div class="row justify-content-md-center">
+                    <div class="up col-md-4">
+                        <i class="up far fa-thumbs-up" aria-hidden="true"></i>
                     </div>
-                    <div class="uk-margin">
-                        <div uk-form-custom="target: > * > span:first-child">
-                            <select>
-                                <option value="">Type of Riding</option>
-                                <option value="1">Pleasure</option>
-                                <option value="2">Commute</option>
-                                <option value="3">Race</option>
-                                <option value="4">Other</option>
-                            </select>
-                            <button class="uk-button uk-button-default" type="button" tabindex="-1">
-                                <span></span>
-                                <span uk-icon="icon: chevron-down"></span>
-                            </button>
-                        </div>
+                    <div class="down col-md-4">
+                        <i class="down far fa-thumbs-down" aria-hidden="true"></i>
                     </div>
-                    <button type="submit" class="next3 uk-button uk-button-default">Next</button>
+                </div>
+                <button type="submit" class="next3 uk-button uk-button-default">Next</button>
             </div>
 
             <div class="you">
@@ -230,16 +214,8 @@
                         <input class="uk-input" type="text" placeholder="Year">
                     </div>
                 </div>
-                
-                <h4>Have you ever had a bike stolen?</h4>
-                <div class="row justify-content-md-center">
-                    <div class="up col-md-4">
-                        <i class="up far fa-thumbs-up" aria-hidden="true"></i>
-                    </div>
-                    <div class="down col-md-4">
-                        <i class="down far fa-thumbs-down" aria-hidden="true"></i>
-                    </div>
-                </div>
+
+
 
             </div>
 

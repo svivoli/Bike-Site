@@ -6,7 +6,7 @@ const often = $('.often');
 const up = $('.up');
 const down = $('.down');
 const next2 = $('.next2');
-const type = $('.type');
+const info = $('.bike-info');
 const next3 = $('.next3');
 const you = $('.you');
 
@@ -39,14 +39,14 @@ $('.up, .down').on('click', function(event) {
 next2.on('click', function(event) {
     event.preventDefault();
     often.hide();
-    type.show();
+    info.show();
 });
 
-next2.on('click', function(event) {
-    event.preventDefault();
-    type.hide();
-    you.show();
-});
+// next2.on('click', function(event) {
+//     event.preventDefault();
+//     info.hide();
+//     you.show();
+// });
 
 $('.light', '.med', '.heavy').on('click', function(event) {
     event.preventDefault();
