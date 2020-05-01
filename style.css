@@ -217,14 +217,14 @@ body {
     color: gray !important;
 }
 /* stolen */
-.stolen {
+.often {
     display: none;
 }
-.stolen h4 {
+.often h4 {
     padding-bottom: 70px;
     font-family: 'Spartan', sans-serif;
 }
-.stolen .far {
+.far {
     font-size: 50px;
 }
 .up:hover,

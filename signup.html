@@ -114,7 +114,10 @@
                         <p>Estimated Value:</p>
                     </div>
                     <div class="col-md-4">
-                        <input class="value uk-input" type="text">
+                        <div class="uk-inline">
+                            <span class="uk-form-icon">$</span>
+                            <input class="value uk-input" type="text" name="value" value="">
+                        </div>
                     </div>
                 </div>
                 <div class="terms">
@@ -127,16 +130,11 @@
                 <button type="submit" class="next1 uk-button uk-button-default">Next</button>
             </div>
 
-            <div class="stolen">
-                <h4>Have you ever had a bike stolen?</h4>
-                <div class="row justify-content-md-center">
-                    <div class="up col-md-4">
-                        <i class="up far fa-thumbs-up" aria-hidden="true"></i>
-                    </div>
-                    <div class="down col-md-4">
-                        <i class="down far fa-thumbs-down" aria-hidden="true"></i>
-                    </div>
-                </div>
+            <div class="often">
+                        <h4>How often do you ride?</h4>
+                        <input type="button" class="light uk-button uk-button-default" value="0-5 Days/Month">
+                        <input type="button"class="med uk-button uk-button-default" value="10+ Days/Month">
+                        <input type="button" class="heavy uk-button uk-button-default" value="Daily">               
                 <button type="submit" class="next2 uk-button uk-button-default">Next</button>
             </div>
 
@@ -231,17 +229,16 @@
                         <input class="uk-input" type="text" placeholder="Year">
                     </div>
                 </div>
-                <div class="row" style="margin-top: 20px;">
-                    <div class="col-md-4">
-                        <p>How often you ride (monthly):</p>
+                
+                <h4>Have you ever had a bike stolen?</h4>
+                <div class="row justify-content-md-center">
+                    <div class="up col-md-4">
+                        <i class="up far fa-thumbs-up" aria-hidden="true"></i>
                     </div>
-                    <div class="col-md-8">
-                        <input type="button" class="light uk-button uk-button-default" value="0-5">
-                        <input type="button"class="med uk-button uk-button-default" value="6-15">
-                        <input type="button" class="heavy uk-button uk-button-default" value="16+">
+                    <div class="down col-md-4">
+                        <i class="down far fa-thumbs-down" aria-hidden="true"></i>
                     </div>
                 </div>
-
 
             </div>
 
