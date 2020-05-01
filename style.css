@@ -72,7 +72,7 @@ body {
 .start-btn {
     margin-top: 220px;
 }
-.start-btn, .plans-btn, .next1-btn, .next2-btn, .next3-btn {
+.start-btn, .plans-btn, .next1-btn, .next2-btn, .next3-btn, .submit-btn {
     background-color: black !important;
     border: none;
     color: white !important;
@@ -212,7 +212,7 @@ body {
 .next1-btn {
     margin-top: 30px;
 }
-.next1-btn:hover, .next2-btn:hover, .next3-btn:hover {
+.next1-btn:hover, .next2-btn:hover, .next3-btn:hover, .submit-btn:hover {
     background-color: black !important;
     color: gray !important;
 }
@@ -272,3 +272,6 @@ body {
 .active1 {
     border: solid 1px black;
 }
+/* .you button {
+    margin-top: 30px;
+} */

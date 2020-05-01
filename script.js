@@ -10,6 +10,7 @@ const you = $('.you');
 const club_list = $('.club-list');
 const clubs = $('.clubs');
 const club_btn = $('.club-btn');
+const submit_btn = $('.submit-btn');
 
 
 next1_btn.on('click', function(event) {
@@ -48,15 +49,20 @@ $('.up, .down').on('click', function(event) {
     $(this).addClass('active');
 });
 
-// next2.on('click', function(event) {
-//     event.preventDefault();
-//     info.hide();
-//     you.show();
-// });
-
 club_btn.on('click', function(event) {
     event.preventDefault();
     const list_item = clubs.val();
     club_list.append('<li>' + list_item + '</li>');
     clubs.clear() = '';
-})
+});
+
+next3_btn.on('click', function(event) {
+    event.preventDefault();
+    info.hide();
+    you.show();
+});
+
+submit_btn.on('click', function(event) {
+    event.preventDefault();
+    alert('Coming Soon!');
+});
