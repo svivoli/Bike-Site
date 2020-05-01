@@ -199,9 +199,15 @@ body {
     width: 700px;
     display: inline-block;
 }
-.privacy h4 {
-    padding-bottom: 30px;
+.about h4 {
     font-family: 'Spartan', sans-serif;
+}
+.about p {
+    padding-top: 10px;
+}
+.terms {
+    margin: 60px 0 30px;
+
 }
 .next1 {
     margin-top: 30px;
@@ -245,4 +251,18 @@ body {
 }
 .next3 {
     margin-top: 20px;
+}
+/* you */
+.you {
+    display: none;
+}
+.you h3 {
+    padding-bottom: 30px;
+    font-family: 'Spartan', sans-serif;
+}
+.you .uk-input {
+    margin: 10px;
+}
+.active1 {
+    border: solid 1px black;
 }

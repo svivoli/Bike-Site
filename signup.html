@@ -78,31 +78,8 @@
     <section class="sign-up">
         <div class="form-content">
 
-            <div class="privacy">
-                <h4>Never have to worry about damaging or losing your bike AGAIN!</h4>
-                <p>Terms of Service <a href="#">View</a></p>
-                <p>Privacy Policy <a href="#">View</a></p>
-                <label><input class="agree uk-checkbox" type="checkbox"> Agree to Terms of Service & Privacy
-                    Policy*</label>
-                <br>
-                <button type="submit" class="next1 uk-button uk-button-default">Next</button>
-            </div>
-
-            <div class="stolen">
-                <h4>Have you ever had a bike stolen?</h4>
-                <div class="row justify-content-md-center">
-                    <div class="up col-md-4">
-                        <i class="up far fa-thumbs-up" aria-hidden="true"></i>
-                    </div>
-                    <div class="down col-md-4">
-                        <i class="down far fa-thumbs-down" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <button type="submit" class="next2 uk-button uk-button-default">Next</button>
-            </div>
-
-            <div class="type">
-                <h4>What type of bike do you have?</h4>
+            <div class="about">
+                <h4>Tell us about your bike!</h4>
                 <form class="uk-form-horizontal uk-margin-large">
                     <div class="uk-margin">
                         <label class="uk-form-label" for="form-horizontal-select">Make</label>
@@ -131,6 +108,41 @@
                             </select>
                         </div>
                     </div>
+                </form>
+                <div class="row uk-margin">
+                    <div class="col-md-6">
+                        <p>Estimated Value:</p>
+                    </div>
+                    <div class="col-md-4">
+                        <input class="value uk-input" type="text">
+                    </div>
+                </div>
+                <div class="terms">
+                <p>Terms of Service <a href="#">View</a></p>
+                <p>Privacy Policy <a href="#">View</a></p>
+                <label><input class="agree uk-checkbox" type="checkbox"> Agree to Terms of Service & Privacy
+                    Policy*</label>
+                </div>
+                
+                <button type="submit" class="next1 uk-button uk-button-default">Next</button>
+            </div>
+
+            <div class="stolen">
+                <h4>Have you ever had a bike stolen?</h4>
+                <div class="row justify-content-md-center">
+                    <div class="up col-md-4">
+                        <i class="up far fa-thumbs-up" aria-hidden="true"></i>
+                    </div>
+                    <div class="down col-md-4">
+                        <i class="down far fa-thumbs-down" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <button type="submit" class="next2 uk-button uk-button-default">Next</button>
+            </div>
+
+            <div class="type">
+                <h4>What type of bike do you have?</h4>
+                
                     <div class="row">
                         <div class="col-md-3">
                             <h5>Upload a Picture</h5>
@@ -144,7 +156,7 @@
                                     <span class="uk-link">selecting one</span>
                                 </div>
                             </div>
-        
+
                             <progress id="js-progressbar" class="uk-progress" value="0" max="100" hidden></progress>
                         </div>
                     </div>
@@ -165,6 +177,76 @@
                     </div>
                     <button type="submit" class="next3 uk-button uk-button-default">Next</button>
             </div>
+
+            <div class="you">
+                <h3>You</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <input class="uk-input" type="text" placeholder="First">
+                    </div>
+                    <div class="col-md-6">
+                        <input class="uk-input" type="text" placeholder="Last">
+                    </div>
+                    <div class="col-md-12">
+                        <input class="uk-input" type="text" placeholder="Street Address">
+                    </div>
+                    <div class="col-md-3">
+                        <input class="uk-input" type="text" placeholder="#">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <input class="uk-input" type="text" placeholder="City">
+                    </div>
+                    <div class="col-md-3">
+                        <input class="uk-input" type="text" placeholder="State">
+                    </div>
+                    <div class="col-md-3">
+                        <input class="uk-input" type="text" placeholder="Zip">
+                    </div>
+                </div>
+                <div class="uk-margin">
+                    <div class="uk-inline">
+                        <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: phone"></span>
+                        <input class="uk-input" type="text" placeholder="(000)000-0000">
+                    </div>
+                </div>
+                <div class="uk-margin">
+                    <div class="uk-inline">
+                        <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: mail"></span>
+                        <input class="uk-input" type="text" placeholder="email@domain.com">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4" style="margin-top: 20px;">
+                        <p>Date of Birth:</p>
+                    </div>
+                    <div class="col-md-2">
+                        <input class="uk-input" type="text" placeholder="Month">
+                    </div>
+                    <div class="col-md-2">
+                        <input class="uk-input" type="text" placeholder="Day">
+                    </div>
+                    <div class="col-md-2">
+                        <input class="uk-input" type="text" placeholder="Year">
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 20px;">
+                    <div class="col-md-4">
+                        <p>How often you ride (monthly):</p>
+                    </div>
+                    <div class="col-md-8">
+                        <input type="button" class="light uk-button uk-button-default" value="0-5">
+                        <input type="button"class="med uk-button uk-button-default" value="6-15">
+                        <input type="button" class="heavy uk-button uk-button-default" value="16+">
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
 
         </div>
     </section>
