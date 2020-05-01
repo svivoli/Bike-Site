@@ -72,7 +72,7 @@ body {
 .start-btn {
     margin-top: 220px;
 }
-.start-btn, .plans-btn, .next1, .next2, .next3 {
+.start-btn, .plans-btn, .next1-btn, .next2-btn, .next3-btn {
     background-color: black !important;
     border: none;
     color: white !important;
@@ -190,7 +190,7 @@ body {
     color: white;
 }
 /* * Get Started * */
-/* privacy policy */
+/* about */
 .sign-up {
     text-align: center;
 }
@@ -209,39 +209,38 @@ body {
     margin: 60px 0 30px;
 
 }
-.next1 {
+.next1-btn {
     margin-top: 30px;
 }
-.next1:hover, .next2:hover, .next3:hover {
+.next1-btn:hover, .next2-btn:hover, .next3-btn:hover {
     background-color: black !important;
     color: gray !important;
 }
-/* stolen */
+/* often */
 .often {
     display: none;
 }
 .often h4 {
-    padding-bottom: 70px;
+    padding-bottom: 50px;
     font-family: 'Spartan', sans-serif;
 }
-.next2 {
-    margin-top: 90px;
+.often input {
+    margin: 10px;
+}
+.next2-btn {
+    margin-top: 70px;
 }
 /* bike-info */
 .bike-info {
     display: none;
 }
-.bike-info h4, h5 {
+.bike-info h4 {
     font-family: 'Spartan', sans-serif;
 }
-.uses {
-    margin: 30px 0 30px;
-}
 .bike-info input {
-    margin: 10px;
+    margin: 20px;
 }
 .far {
-    margin: 30px 0 30px;
     font-size: 50px;
 }
 .up:hover,
@@ -253,7 +252,10 @@ body {
 .active {
     color: gray;
 }
-.next3 {
+.club-list {
+    list-style: none;
+}
+.next3-btn {
     margin-top: 20px;
 }
 /* you */

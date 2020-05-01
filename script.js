@@ -1,18 +1,18 @@
 const about = $('.about');
 const value = $('.value');
-const next1 = $('.next1');
+const next1_btn = $('.next1-btn');
 const agree = $('.agree');
 const often = $('.often');
-const up = $('.up');
-const down = $('.down');
-const next2 = $('.next2');
+const next2_btn = $('.next2-btn');
 const info = $('.bike-info');
-const next3 = $('.next3');
+const next3_btn = $('.next3-btn');
 const you = $('.you');
+const club_list = $('.club-list');
+const clubs = $('.clubs');
+const club_btn = $('.club-btn');
 
 
-
-next1.on('click', function(event) {
+next1_btn.on('click', function(event) {
     console.log(isNaN(value.val()));
     event.preventDefault();
     if (value.val() === '' || value.val() == ' ') {
@@ -30,16 +30,22 @@ next1.on('click', function(event) {
     }
 });
 
+$('.light', '.med', '.heavy').on('click', function(event) {
+    event.preventDefault();
+    $('.active1').removeClass('active1');
+    $(this).addClass('active1');
+})
+
+next2_btn.on('click', function(event) {
+    event.preventDefault();
+    often.hide();
+    info.show();
+});
+
 $('.up, .down').on('click', function(event) {
     event.preventDefault();
     $('.active').removeClass('active');
     $(this).addClass('active');
-});
-
-next2.on('click', function(event) {
-    event.preventDefault();
-    often.hide();
-    info.show();
 });
 
 // next2.on('click', function(event) {
@@ -48,8 +54,9 @@ next2.on('click', function(event) {
 //     you.show();
 // });
 
-$('.light', '.med', '.heavy').on('click', function(event) {
+club_btn.on('click', function(event) {
     event.preventDefault();
-    $('.active1').removeClass('active1');
-    $(this).addClass('active1');
+    const list_item = clubs.val();
+    club_list.append('<li>' + list_item + '</li>');
+    clubs.clear() = '';
 })
