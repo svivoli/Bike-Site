@@ -15,13 +15,16 @@ const you = $('.you');
 next1.on('click', function(event) {
     console.log(isNaN(value.val()));
     event.preventDefault();
+    if (value.val() === '' || value.val() == ' ') {
+        alert('Please estimate the value of your bike.')
+    }
     if (isNaN(value.val())) {
         alert('Estimated value must be a numerical value.')
     }
     if (!agree.is(':checked')) {
         alert('You must agree to the Terms of Service & Privacy Policy to proceed.');
     }
-    if (!isNaN(value.val()) && agree.is(':checked')) {
+    if (!isNaN(value.val()) && value.val() != '' && value.val() != ' ' && agree.is(':checked')) {
         about.hide();
         often.show();
     }
