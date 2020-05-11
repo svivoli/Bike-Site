@@ -117,10 +117,18 @@ body {
 .plans-btn:hover {
     color: gray !important;
 }
-@media screen and (max-width: 1000px) {
-    /* .blurb h1 {
-        margin-left: 100px;
-    } */
+@media screen and (max-width: 900px) {
+    .coverage p {
+        margin-top: 10%;
+    }
+    .plans-btn {
+        margin-top: 5% !important;
+    }
+}
+@media screen and (max-width: 800px) {
+    .coverage-right {
+        display: none;
+    }
 }
 /* ride */
 .ride {
