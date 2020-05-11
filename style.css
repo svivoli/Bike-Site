@@ -40,6 +40,7 @@ body {
 }
 /* lead */
 .lead, .lead2 {
+    margin-right: -20px;
     background-image: url('img/sunny.jpg');
     background-attachment: fixed;
     background-position: center;
@@ -96,25 +97,30 @@ body {
     margin-top: 75px;
 }
 .break {
-    margin-left: 200px;
+    margin-left: 29%;
     width: 50px;
     border-top: solid 3.5px black;
 }
 .blurb h1 {
     padding-top: 30px;
-    margin-left: 200px;
+    margin-left: 28%;
     font-family: 'Secular One', sans-serif;
     text-transform: uppercase;
     font-size: 60px;
 }
 .coverage p {
     margin-top: 75px;
-    margin-left: 200px;
+    margin-left: 28%;
     margin-right: 75px;
     text-align: left;
 }
 .plans-btn:hover {
     color: gray !important;
+}
+@media screen and (max-width: 1000px) {
+    /* .blurb h1 {
+        margin-left: 100px;
+    } */
 }
 /* ride */
 .ride {
