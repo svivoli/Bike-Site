@@ -1,12 +1,6 @@
-const about = $('.about');
 const value = $('.value');
 const next1_btn = $('.next1-btn');
 const agree = $('.agree');
-const often = $('.often');
-const next2_btn = $('.next2-btn');
-const info = $('.bike-info');
-const next3_btn = $('.next3-btn');
-const you = $('.you');
 const club_list = $('.club-list');
 const clubs = $('.clubs');
 const club_btn = $('.club-btn');
@@ -35,12 +29,6 @@ $('.light', '.med', '.heavy').on('click', function(event) {
     $(this).addClass('active1');
 })
 
-// next2_btn.on('click', function(event) {
-//     event.preventDefault();
-//     often.hide();
-//     info.show();
-// });
-
 $('.up, .down').on('click', function(event) {
     event.preventDefault();
     $('.active').removeClass('active');
@@ -53,12 +41,6 @@ club_btn.on('click', function(event) {
     club_list.append('<li>' + list_item + '</li>');
     clubs.clear() = '';
 });
-
-// next3_btn.on('click', function(event) {
-//     event.preventDefault();
-//     info.hide();
-//     you.show();
-// });
 
 submit_btn.on('click', function(event) {
     event.preventDefault();
