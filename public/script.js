@@ -46,3 +46,4 @@ submit_btn.on('click', function(event) {
     event.preventDefault();
     alert('Coming Soon!');
 });
+
