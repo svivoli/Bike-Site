@@ -13,9 +13,8 @@ const club_btn = $('.club-btn');
 const submit_btn = $('.submit-btn');
 
 
-next1_btn.on('click', function(event) {
+next1_btn.on('click', function(res, req) {
     console.log(isNaN(value.val()));
-    event.preventDefault();
     if (value.val() === '' || value.val() == ' ') {
         alert('Please estimate the value of your bike.')
     }
@@ -24,6 +23,9 @@ next1_btn.on('click', function(event) {
     }
     if (!agree.is(':checked')) {
         alert('You must agree to the Terms of Service & Privacy Policy to proceed.');
+    }
+    if (!isNaN(value.val()) && value.val() != '' && value.val() != ' ' && agree.is(':checked')) {
+        location.href = 'signup2.html';
     }
 });
 
