@@ -1,5 +1,4 @@
 const express = require('express');
-const mongojs = require("mongojs");
 const logger = require("morgan");
 const path = require('path');
 
@@ -8,13 +7,13 @@ const app = express();
 
 app.use(logger("dev"));
 
-// const MONGO_URI = process.env.MONGODB_URI;
-// const mongoose = require("mongoose");
+const MONGO_URI = process.env.MONGODB_URI || "mongodb://localhost/helmet_register";
+const mongoose = require("mongoose");
 // const MongoStore = require("connect-mongo")(session);
 // const bodyParser = require('body-parser');
 
-// mongoose.connect(MONGO_URI, { useNewUrlParser: true })
-// .then(console.log(`MongoDB connected at ${MONGO_URI}`));
+mongoose.connect(MONGO_URI, { useNewUrlParser: true })
+.then(console.log(`MongoDB connected at ${MONGO_URI}`));
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
