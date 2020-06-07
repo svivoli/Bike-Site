@@ -262,9 +262,6 @@ body {
     color: gray !important;
 }
 /* often */
-.often {
-    display: none;
-}
 .often h4 {
     padding-bottom: 50px;
     font-family: 'Spartan', sans-serif;
@@ -276,9 +273,6 @@ body {
     margin-top: 70px;
 }
 /* bike-info */
-.bike-info {
-    display: none;
-}
 .bike-info h4 {
     font-family: 'Spartan', sans-serif;
 }
@@ -304,9 +298,6 @@ body {
     margin-top: 20px;
 }
 /* you */
-.you {
-    display: none;
-}
 .you h3 {
     padding-bottom: 30px;
     font-family: 'Spartan', sans-serif;

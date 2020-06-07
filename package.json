@@ -1,0 +1,29 @@
+{
+  "name": "helmet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "aos.js",
+  "dependencies": {
+    "animate.css": "^4.1.0",
+    "aos": "^2.3.4",
+    "express": "^4.17.1",
+    "mongojs": "^3.1.0",
+    "mongoose": "^5.9.16",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/svivoli/Bike-Site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/svivoli/Bike-Site/issues"
+  },
+  "homepage": "https://github.com/svivoli/Bike-Site#readme"
+}

@@ -25,10 +25,6 @@ next1_btn.on('click', function(event) {
     if (!agree.is(':checked')) {
         alert('You must agree to the Terms of Service & Privacy Policy to proceed.');
     }
-    if (!isNaN(value.val()) && value.val() != '' && value.val() != ' ' && agree.is(':checked')) {
-        about.hide();
-        often.show();
-    }
 });
 
 $('.light', '.med', '.heavy').on('click', function(event) {
@@ -37,11 +33,11 @@ $('.light', '.med', '.heavy').on('click', function(event) {
     $(this).addClass('active1');
 })
 
-next2_btn.on('click', function(event) {
-    event.preventDefault();
-    often.hide();
-    info.show();
-});
+// next2_btn.on('click', function(event) {
+//     event.preventDefault();
+//     often.hide();
+//     info.show();
+// });
 
 $('.up, .down').on('click', function(event) {
     event.preventDefault();
@@ -56,11 +52,11 @@ club_btn.on('click', function(event) {
     clubs.clear() = '';
 });
 
-next3_btn.on('click', function(event) {
-    event.preventDefault();
-    info.hide();
-    you.show();
-});
+// next3_btn.on('click', function(event) {
+//     event.preventDefault();
+//     info.hide();
+//     you.show();
+// });
 
 submit_btn.on('click', function(event) {
     event.preventDefault();
