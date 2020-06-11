@@ -2,10 +2,10 @@ import React from 'react';
 
 function Coverage() {
     return(
-        <section class="coverage">
-        <div class="row">
-          <div class="blurb col-md-6 col-sm-12" data-aos="fade-right">
-            <div class="break">
+        <section className="coverage">
+        <div className="row">
+          <div className="blurb col-md-6 col-sm-12" data-aos="fade-right">
+            <div className="break">
             </div>
             <h1>Coverage.</h1>
   
@@ -13,10 +13,10 @@ function Coverage() {
               newbie - you can protect your bike today from getting stolen or broken. Our plans give riders the
               ease of mind by knowing they are always protected with Helmet.</p>
             <p uk-margin>
-              <button class="plans-btn uk-button uk-button-default">See Our Plans</button>
+              <button className="plans-btn uk-button uk-button-default">See Our Plans</button>
             </p>
           </div>
-          <div class="col-md-6 col-sm-12 coverage-right">
+          <div className="col-md-6 col-sm-12 coverage-right">
   
           </div>
         </div>

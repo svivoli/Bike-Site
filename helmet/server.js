@@ -1,11 +1,8 @@
 const express = require('express');
-const logger = require("morgan");
 const path = require('path');
 
 const PORT = process.env.PORT || 3002;
 const app = express();
-
-app.use(logger("dev"));
 
 const MONGO_URI = process.env.MONGODB_URI || "mongodb://localhost/helmet_register";
 const mongoose = require("mongoose");
@@ -20,10 +17,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use(express.static("public"));
-
-app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname + "./public/index.html"));
-});
 
 app.get("/signup", (req, res) => {
     res.sendFile(path.join(__dirname + "./public/signup.html"));

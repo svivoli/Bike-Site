@@ -13,4 +13,6 @@ function Home() {
             <Ride />
         </div>
     )
-}
+};
+
+export default Home;
