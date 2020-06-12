@@ -5,13 +5,14 @@ const MONGO_URI = process.env.MONGODB_URI || "mongodb://localhost/helmet";
 mongoose.connect(MONGO_URI, { useNewUrlParser: true })
     .then(console.log(`MongoDB connected at ${MONGO_URI}`));
 
-const bikeSeed =
+const bikeSeed = [
     {
         make: "make",
         model: "model",
         year: 2019,
         estvalue: 1000
-    };
+    }
+];
 
 db.Bike
     .remove({})
@@ -25,10 +26,11 @@ db.Bike
         process.exit(1);
     });
 
-const frequencySeed =
+const frequencySeed = [
     {
         often: "5-10"
-    };
+    }
+];
 
 db.Frequency
     .remove({})
@@ -42,12 +44,13 @@ db.Frequency
         process.exit(1);
     });
 
-const usesSeed =
+const usesSeed = [
     {
         use: "recreation",
         stolen: false,
         clubs: "los altos hills"
-    };
+    }
+];
 
 db.Uses
     .remove({})
@@ -61,7 +64,7 @@ db.Uses
         process.exit(1);
     });
 
-const clientSeed =
+const clientSeed = [
     {
         first: "sarah",
         last: "last",
@@ -70,7 +73,8 @@ const clientSeed =
         dob_day: 01,
         dob_year: 1990,
         zip: 97239
-    };
+    }
+];
 
 db.Client
     .remove({})
