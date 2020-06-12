@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
-
+import API from '../../utils/API';
 
 function About() {
+    const [make, setMake] = useState();
+    const [model, setModel] = useState();
+    const [year, setYear] = useState();
     const [value, setValue] = useState();
     const [checked, setChecked] = useState(false);
 
@@ -18,7 +21,7 @@ function About() {
     }
 
     function handleClick() {
-        let estimate = document.getElementsByclassName('estimate');
+        let estimate = document.getElementsByClassName('estimate');
         console.log(isNaN(estimate.value));
         if (estimate.value === '' || estimate.value == ' ') {
             alert('Please estimate the value of your bike.')
@@ -32,7 +35,22 @@ function About() {
         if (isNaN(estimate.value) && estimate.value != '' && estimate.value != ' ' && checked == true) {
             document.location.href = '/signup2';
         }
+        handlePost();
     }
+
+
+    function handlePost(event) {
+        event.preventDefault();
+
+        API.createBike({
+            make: make,
+            model: model,
+            year: year,
+            estvalue: value
+        })
+            .then(console.log("Bike saved to database."))
+            .catch(err => console.log(err));
+    };
 
     return (
         <section className="sign-up">

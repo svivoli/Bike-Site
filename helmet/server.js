@@ -1,10 +1,10 @@
 const express = require('express');
-const path = require('path');
+// const path = require('path');
 
 const PORT = process.env.PORT || 3002;
 const app = express();
 
-const MONGO_URI = process.env.MONGODB_URI || "mongodb://localhost/helmet_register";
+const MONGO_URI = process.env.MONGODB_URI || "mongodb://localhost/helmet";
 const mongoose = require("mongoose");
 // const MongoStore = require("connect-mongo")(session);
 // const bodyParser = require('body-parser');
@@ -33,6 +33,9 @@ app.use(express.static(__dirname + '/public'));
 // app.get("/signup4", (req, res) => {
 //     res.sendFile(path.join(__dirname + "./public/signup4.html"));
 // });
+
+// const routes = require('./routes');
+// app.use(routes);
 
 app.listen(PORT, function () {
     console.log(`🌎 ==> API server now on port ${PORT}!`);
