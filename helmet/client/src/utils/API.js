@@ -23,6 +23,6 @@ export default {
         return axios.get("/api/uses");
     },
     getPostedClients: function () {
-        return axios.get("/api/clients");
+        return axios.get("/api/client");
     }
 }
