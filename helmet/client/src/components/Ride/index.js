@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 function Ride() {
     return(
         <section className="ride">

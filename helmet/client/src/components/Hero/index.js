@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 function Hero() {
     return(
         <section className="lead">
@@ -7,7 +8,7 @@ function Hero() {
           <h5 className="bold">Easy, affordable insurance for all bicycles</h5>
           <h1>Protect Your Bike</h1>
           <h5>From Theft or Damage</h5>
-          <a className="start-btn uk-button uk-button-default" href="signup.html">Get Started</a>
+          <a className="start-btn uk-button uk-button-default" href="/signup">Get Started</a>
         </div>
       </section>
     )

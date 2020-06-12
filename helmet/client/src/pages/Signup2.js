@@ -1,15 +1,13 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import SignUpSection from '../components/SignUpSection';
 import Often from '../components/Often';
 
+
 function SignUp2() {
-    return(
+    return (
         <div>
-        <Navbar />
-        <SignUpSection>
+            <Navbar />
             <Often />
-        </SignUpSection>
         </div>
     )
 };

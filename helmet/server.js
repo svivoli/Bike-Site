@@ -16,23 +16,23 @@ mongoose.connect(MONGO_URI, { useNewUrlParser: true })
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use(express.static("public"));
+app.use(express.static(__dirname + '/public'));
 
-app.get("/signup", (req, res) => {
-    res.sendFile(path.join(__dirname + "./public/signup.html"));
-});
+// app.get("/signup", (req, res) => {
+//     res.sendFile(path.join(__dirname + "./public/signup.html"));
+// });
 
-app.get("/signup2", (req, res) => {
-    res.sendFile(path.join(__dirname + "./public/signup2.html"));
-});
+// app.get("/signup2", (req, res) => {
+//     res.sendFile(path.join(__dirname + "./public/signup2.html"));
+// });
 
-app.get("/signup3", (req, res) => {
-    res.sendFile(path.join(__dirname + "./public/signup3.html"));
-});
+// app.get("/signup3", (req, res) => {
+//     res.sendFile(path.join(__dirname + "./public/signup3.html"));
+// });
 
-app.get("/signup4", (req, res) => {
-    res.sendFile(path.join(__dirname + "./public/signup4.html"));
-});
+// app.get("/signup4", (req, res) => {
+//     res.sendFile(path.join(__dirname + "./public/signup4.html"));
+// });
 
 app.listen(PORT, function () {
     console.log(`🌎 ==> API server now on port ${PORT}!`);

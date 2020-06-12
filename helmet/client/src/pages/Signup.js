@@ -1,15 +1,13 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import SignUpSection from '../components/SignUpSection';
 import About from '../components/About';
 
+
 function SignUp() {
-    return(
+    return (
         <div>
-        <Navbar />
-        <SignUpSection>
+            <Navbar />
             <About />
-        </SignUpSection>
         </div>
     )
 };

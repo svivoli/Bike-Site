@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 function Coverage() {
     return(
         <section className="coverage">
