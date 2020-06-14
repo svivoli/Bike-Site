@@ -52,7 +52,7 @@ function About() {
         }
         if (isNaN(estimate.value) && estimate.value != '' && estimate.value != ' ' && checked == true) {
             handlePost();
-            // document.location.href = '/signup2';
+            document.location.href = '/signup2';
         }
     }
 
