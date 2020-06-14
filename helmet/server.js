@@ -18,6 +18,12 @@ app.use(express.json());
 
 app.use(express.static(__dirname + '/public'));
 
+app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "http://localhost:3000");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+  })
+
 // app.get("/signup", (req, res) => {
 //     res.sendFile(path.join(__dirname + "./public/signup.html"));
 // });
@@ -34,8 +40,8 @@ app.use(express.static(__dirname + '/public'));
 //     res.sendFile(path.join(__dirname + "./public/signup4.html"));
 // });
 
-// const routes = require('./routes');
-// app.use(routes);
+const routes = require('./routes');
+app.use(routes);
 
 app.listen(PORT, function () {
     console.log(`🌎 ==> API server now on port ${PORT}!`);

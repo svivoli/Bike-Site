@@ -8,8 +8,26 @@ function About() {
     const [value, setValue] = useState();
     const [checked, setChecked] = useState(false);
 
-    function handleChange(event) {
-        if (event.target.name == 'estimate') {
+    function handleMakeChange(event) {
+        if (event.target.name == 'make') {
+            setMake(event.target.value);
+        }
+    }
+
+    function handleModelChange(event) {
+        if (event.target.name == 'model') {
+            setModel(event.target.value);
+        }
+    }
+
+    function handleYearChange(event) {
+        if (event.target.name == 'year') {
+            setYear(event.target.value);
+        }
+    }
+
+    function handleValueChange(event) {
+        if (event.target.name == 'value') {
             setValue(event.target.value);
         }
     }
@@ -33,15 +51,14 @@ function About() {
             alert('You must agree to the Terms of Service & Privacy Policy to proceed.');
         }
         if (isNaN(estimate.value) && estimate.value != '' && estimate.value != ' ' && checked == true) {
-            document.location.href = '/signup2';
+            handlePost();
+            // document.location.href = '/signup2';
         }
-        handlePost();
     }
 
 
-    function handlePost(event) {
-        event.preventDefault();
-
+    function handlePost() {
+        console.log("HEY FROM HANDLEPOST")
         API.createBike({
             make: make,
             model: model,
@@ -57,35 +74,95 @@ function About() {
             <div className="form-content">
                 <div className="about">
                     <h4>Tell us about your bike!</h4>
-                    <form className="uk-form-horizontal uk-margin-large">
+                    <div class="row uk-margin">
+                        <div class="col-md-4">
+                            <p>Make:</p>
+                        </div>
+                        <div class="col-md-8">
+                            <input
+                                class="uk-input uk-form-width-large"
+                                type="text"
+                                name="make"
+                                onChange={handleMakeChange}
+                            >
+                            </input>
+                        </div>
+                    </div>
+                    <div class="row uk-margin">
+                        <div class="col-md-4">
+                            <p>Model:</p>
+                        </div>
+                        <div class="col-md-8">
+                            <input
+                                class="uk-input uk-form-width-large"
+                                type="text"
+                                name="model"
+                                onChange={handleModelChange}
+                            >
+                            </input>
+                        </div>
+                    </div>
+                    <div class="row uk-margin">
+                        <div class="col-md-4">
+                            <p>Year:</p>
+                        </div>
+                        <div class="col-md-8">
+                            <input
+                                class="uk-input uk-form-width-large"
+                                type="text"
+                                name="year"
+                                onChange={handleYearChange}
+                            >
+                            </input>
+                        </div>
+                    </div>
+                    {/* <form className="uk-form-horizontal uk-margin-large">
                         <div className="uk-margin">
                             <label className="uk-form-label" for="form-horizontal-select">Make</label>
                             <div className="uk-form-controls">
-                                <select className="uk-select" id="make form-horizontal-select">
-                                    <option>Option 01</option>
-                                    <option>Option 02</option>
+                                <select
+                                    className="uk-select"
+                                    id="make form-horizontal-select"
+                                    name="make"
+                                    value={make}
+                                    onChange={handleMakeChange}>
+                                    <option value="Select">Select</option>
+                                    <option value="01">Option 01</option>
+                                    <option value="02">Option 02</option>
                                 </select>
                             </div>
                         </div>
                         <div className="uk-margin">
                             <label className="uk-form-label" for="form-horizontal-select">Model</label>
                             <div className="uk-form-controls">
-                                <select className="uk-select" id="model form-horizontal-select">
-                                    <option>Option 01</option>
-                                    <option>Option 02</option>
+                                <select
+                                    className="uk-select"
+                                    id="model form-horizontal-select"
+                                    name="model"
+                                    value={model}
+                                    onChange={handleModelChange}>
+                                    <option value="Select">Select</option>
+                                    <option value="01">Option 01</option>
+                                    <option value="02">Option 02</option>
                                 </select>
                             </div>
                         </div>
                         <div className="uk-margin">
                             <label className="uk-form-label" for="form-horizontal-select">Year</label>
                             <div className="uk-form-controls">
-                                <select className="uk-select" id="year form-horizontal-select">
-                                    <option>Option 01</option>
-                                    <option>Option 02</option>
+                                <select
+                                    className="uk-select"
+                                    id="year form-horizontal-select"
+                                    name="year"
+                                    value={year}
+                                    onChange={handleYearChange}>
+                                    <option value="Select">Select</option>
+                                    <option value="01">Option 01</option>
+                                    <option value="02">Option 02</option>
                                 </select>
                             </div>
                         </div>
-                    </form>
+                    </form> */}
                     <div className="row uk-margin">
                         <div className="col-md-6">
                             <p>Estimated Value:</p>
@@ -93,7 +170,7 @@ function About() {
                         <div className="col-md-4">
                             <div className="uk-inline">
                                 <span className="uk-form-icon">$</span>
-                                <input className="estimate uk-input" type="text" name="value" value={value} onChange={handleChange}></input>
+                                <input className="estimate uk-input" type="text" name="value" onChange={handleValueChange}></input>
                             </div>
                         </div>
                     </div>
