@@ -37,9 +37,9 @@ $('.up, .down').on('click', function(event) {
 
 club_btn.on('click', function(event) {
     event.preventDefault();
-    const list_item = clubs.val();
+    const list_item = clubs.value();
     club_list.append('<li>' + list_item + '</li>');
-    clubs.clear() = '';
+    clubs.clear();
 });
 
 submit_btn.on('click', function(event) {
