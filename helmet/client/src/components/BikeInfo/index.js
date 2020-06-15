@@ -6,17 +6,41 @@ function BikeInfo() {
     const [uses, setUses] = useState([]);
     const [stolen, setStolen] = useState();
     const [clubs, setClubs] = useState([]);
+    const [active1, setActive1] = useState();
+    const [active2, setActive2] = useState();
 
     function handleUsesChange(event) {
         setUses(event.target.value);
     }
 
-    function handleStolenTrue() {
+    function handleStolenTrue(e) {
         setStolen(true);
+        addActive1Class(e);
     }
 
-    function handleStolenFalse() {
+    function handleStolenFalse(e) {
         setStolen(false);
+        addActive2Class(e);
+    }
+
+    function addActive1Class(e) {
+        const clicked = e.target.id
+        if (active1 === clicked) {
+            setActive1('active');
+            setActive2('');
+        } else {
+            setActive1('')
+        }
+    }
+
+    function addActive2Class(e) {
+        const clicked = e.target.id
+        if (active2 === clicked) {
+            setActive2('active');
+            setActive1('');
+        } else {
+            setActive2('')
+        }
     }
 
     function handleClubsChange(event) {
@@ -50,11 +74,11 @@ function BikeInfo() {
                 <div className="bike-info">
                     <h4>What do you use your bike for (primarily)?</h4>
                     <div className="uses uk-margin-large">
-                    <input type="button" className="light uk-button uk-button-default" value="Commuting" onClick={handleUsesChange}></input>
-                    <input type="button" className="light uk-button uk-button-default" value="Pleasure" onClick={handleUsesChange}></input>
-                    <input type="button" className="light uk-button uk-button-default" value="Exercise" onClick={handleUsesChange}></input>
-                    <input type="button" className="light uk-button uk-button-default" value="Racing" onClick={handleUsesChange}></input>
-                    <input type="button" className="light uk-button uk-button-default" value="Other" onClick={handleUsesChange}></input>
+                        <input type="button" className="light uk-button uk-button-default" value="Commuting" onClick={handleUsesChange}></input>
+                        <input type="button" className="light uk-button uk-button-default" value="Pleasure" onClick={handleUsesChange}></input>
+                        <input type="button" className="light uk-button uk-button-default" value="Exercise" onClick={handleUsesChange}></input>
+                        <input type="button" className="light uk-button uk-button-default" value="Racing" onClick={handleUsesChange}></input>
+                        <input type="button" className="light uk-button uk-button-default" value="Other" onClick={handleUsesChange}></input>
                         {/* <label><input className="uk-checkbox" type="checkbox" value="Commuting" onClick={handleUsesChange}></input> Commuting</label>
                         <label><input className="uk-checkbox" type="checkbox" value="Pleasure" onClick={handleUsesChange}></input> Pleasure</label>
                         <label><input className="uk-checkbox" type="checkbox" value="Exercise" onClick={handleUsesChange}></input> Exercise</label>
@@ -65,10 +89,10 @@ function BikeInfo() {
                     <h4>Have you ever had a bike stolen?</h4>
                     <div className="row justify-content-md-center uk-margin-large">
                         <div className="up col-md-4">
-                            <i className="up far fa-thumbs-up" aria-hidden="true" onClick={handleStolenTrue}></i>
+                            <i className={`up far fa-thumbs-up ${active1}`} aria-hidden="true" onClick={handleStolenTrue}></i>
                         </div>
                         <div className="down col-md-4">
-                            <i className="down far fa-thumbs-down" aria-hidden="true" onClick={handleStolenFalse}></i>
+                            <i className={`down far fa-thumbs-down ${active2}`} aria-hidden="true" onClick={handleStolenFalse}></i>
                         </div>
                     </div>
                     <h4>List your bike clubs below</h4>
