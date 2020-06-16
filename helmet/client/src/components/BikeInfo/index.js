@@ -133,7 +133,7 @@ function BikeInfo() {
                             </div>
                         </div>
                     </div>
-                    <a className="next3-btn uk-button uk-button-default" href="#" onClick={handlePost}>Next</a>
+                    <a className="next3-btn uk-button uk-button-default" href="/signup4" onClick={handlePost}>Next</a>
                 </div>
             </div>
         </section>

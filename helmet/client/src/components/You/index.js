@@ -31,16 +31,16 @@ function You() {
                     <h3>You</h3>
                     <div className="row">
                         <div className="col-md-6">
-                            <input className="uk-input" type="text" placeholder="First"></input>
+                            <input className="uk-input" type="text" placeholder="First" onChange={e=> setFirst(e.target.value)}></input>
                         </div>
                         <div className="col-md-6">
-                            <input className="uk-input" type="text" placeholder="Last"></input>
+                            <input className="uk-input" type="text" placeholder="Last" onChange={e=> setLast(e.target.value)}></input>
                         </div>
                     </div>
                     <div className="uk-margin">
                         <div className="uk-inline">
                             <span className="uk-form-icon uk-form-icon-flip" uk-icon="icon: mail"></span>
-                            <input className="uk-input" type="text" placeholder="email@domain.com"></input>
+                            <input className="uk-input" type="text" placeholder="email@domain.com" onChange={e=> setEmail(e.target.value)}></input>
                         </div>
                     </div>
                     <div className="row">
@@ -48,13 +48,13 @@ function You() {
                             <p>Date of Birth:</p>
                         </div>
                         <div className="col-md-2">
-                            <input className="uk-input" type="text" placeholder="Month"></input>
+                            <input className="uk-input" type="text" placeholder="Month" onChange={e=> setMonth(e.target.value)}></input>
                         </div>
                         <div className="col-md-2">
-                            <input className="uk-input" type="text" placeholder="Day"></input>
+                            <input className="uk-input" type="text" placeholder="Day" onChange={e=> setDay(e.target.value)}></input>
                         </div>
                         <div className="col-md-2">
-                            <input className="uk-input" type="text" placeholder="Year"></input>
+                            <input className="uk-input" type="text" placeholder="Year" onChange={e=> setYear(e.target.value)}></input>
                         </div>
                     </div>
                     <div className="row justify-content-md-center">
@@ -62,11 +62,11 @@ function You() {
                             <p>Zip:</p>
                         </div>
                         <div className="col-md-3">
-                            <input className="uk-input" type="text"></input>
+                            <input className="uk-input" type="text" onChange={e=> setZip(e.target.value)}></input>
                         </div>
                     </div>
                     <div className="uk-margin-large">
-                        <button type="submit" className="submit-btn uk-button uk-button-default" onClickk={handlePost()}>Submit</button>
+                        <button type="submit" className="submit-btn uk-button uk-button-default" onClick={handlePost}>Submit</button>
                     </div>
                 </div>
             </div>
