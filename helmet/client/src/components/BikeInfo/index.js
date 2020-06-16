@@ -1,50 +1,72 @@
 import React, { useState } from 'react';
 import API from '../../utils/API';
 
-
 function BikeInfo() {
     const [uses, setUses] = useState([]);
+    const [commuting, setCommuting] = useState();
+    const [pleasure, setPleasure] = useState();
+    const [exercise, setExercise] = useState();
+    const [racing, setRacing] = useState();
+    const [other, setOther] = useState();
     const [stolen, setStolen] = useState();
+    const [clubinput, setClubinput] = useState();
     const [clubs, setClubs] = useState([]);
     const [active1, setActive1] = useState();
     const [active2, setActive2] = useState();
 
-    function handleUsesChange(event) {
-        setUses(event.target.value);
+    function handleUsesChange(e) {
+        const clicked = e.target.value;
+        let uses_array = uses;
+        if ('Commuting' === clicked) {
+            setCommuting('selected');
+            setUses(uses_array => [...uses_array, 'Commuting']);
+        }
+        if ('Pleasure' === clicked) {
+            setPleasure('selected');
+            setUses(uses_array => [...uses_array, 'Pleasure']);
+        }
+        if ('Exercise' === clicked) {
+            setExercise('selected');
+            setUses(uses_array => [...uses_array, 'Exercise']);
+        }
+        if ('Racing' === clicked) {
+            setRacing('selected');
+            setUses(uses_array => [...uses_array, 'Racing']);
+        }
+        if ('Other' === clicked) {
+            setOther('selected');
+            setUses(uses_array => [...uses_array, 'Other']);
+        }
     }
+   
+        // if (commuting === '') {
+        //     setUses(uses_array.filter((e)=>(e !== 'Commuting')));
+        // }
 
     function handleStolenTrue(e) {
-        setStolen(true);
-        addActive1Class(e);
-    }
-
-    function handleStolenFalse(e) {
-        setStolen(false);
-        addActive2Class(e);
-    }
-
-    function addActive1Class(e) {
         const clicked = e.target.id
         if (active1 === clicked) {
             setActive1('active');
             setActive2('');
+            setStolen(true);
         } else {
             setActive1('')
         }
     }
 
-    function addActive2Class(e) {
+    function handleStolenFalse(e) {
         const clicked = e.target.id
         if (active2 === clicked) {
             setActive2('active');
             setActive1('');
+            setStolen(false)
         } else {
             setActive2('')
         }
     }
 
-    function handleClubsChange(event) {
-        setClubs(event.target.value)
+    function handleClubsChange(e) {
+        setClubinput(e.target.value)
     }
 
     function handleClubsAdd(event) {
@@ -55,7 +77,9 @@ function BikeInfo() {
         let li = document.createElement('li');
         li.innerText = list_item;
         club_list.appendChild(li);
-        document.getElementsByClassName('clubs')[0].value = '';
+        setClubinput('');
+        let club_array = clubs;
+        setClubs(club_array => [...club_array, clubinput]);
     }
 
     function handlePost() {
@@ -74,11 +98,11 @@ function BikeInfo() {
                 <div className="bike-info">
                     <h4>What do you use your bike for (primarily)?</h4>
                     <div className="uses uk-margin-large">
-                        <input type="button" className="light uk-button uk-button-default" value="Commuting" onClick={handleUsesChange}></input>
-                        <input type="button" className="light uk-button uk-button-default" value="Pleasure" onClick={handleUsesChange}></input>
-                        <input type="button" className="light uk-button uk-button-default" value="Exercise" onClick={handleUsesChange}></input>
-                        <input type="button" className="light uk-button uk-button-default" value="Racing" onClick={handleUsesChange}></input>
-                        <input type="button" className="light uk-button uk-button-default" value="Other" onClick={handleUsesChange}></input>
+                        <input type="button" className={`light uk-button uk-button-default ${commuting}`} value="Commuting" onClick={handleUsesChange}></input>
+                        <input type="button" className={`light uk-button uk-button-default ${pleasure}`} value="Pleasure" onClick={handleUsesChange}></input>
+                        <input type="button" className={`light uk-button uk-button-default ${exercise}`} value="Exercise" onClick={handleUsesChange}></input>
+                        <input type="button" className={`light uk-button uk-button-default ${racing}`} value="Racing" onClick={handleUsesChange}></input>
+                        <input type="button" className={`light uk-button uk-button-default ${other}`} value="Other" onClick={handleUsesChange}></input>
                         {/* <label><input className="uk-checkbox" type="checkbox" value="Commuting" onClick={handleUsesChange}></input> Commuting</label>
                         <label><input className="uk-checkbox" type="checkbox" value="Pleasure" onClick={handleUsesChange}></input> Pleasure</label>
                         <label><input className="uk-checkbox" type="checkbox" value="Exercise" onClick={handleUsesChange}></input> Exercise</label>
@@ -88,7 +112,7 @@ function BikeInfo() {
                     </div>
                     <h4>Have you ever had a bike stolen?</h4>
                     <div className="row justify-content-md-center uk-margin-large">
-                        <div className="up col-md-4">
+                        <div className="up col-md-4 uk-margin-large">
                             <i className={`up far fa-thumbs-up ${active1}`} aria-hidden="true" onClick={handleStolenTrue}></i>
                         </div>
                         <div className="down col-md-4">
@@ -102,14 +126,14 @@ function BikeInfo() {
                         </div>
                         <div className="row">
                             <div className="col-md-10">
-                                <input className="clubs uk-input" onfocus="this.value=''" type="text" name="clubs" value={clubs} onChange={handleClubsChange}></input>
+                                <input className="clubs uk-input" onfocus="this.value=''" type="text" name="clubs" value={clubinput} onChange={handleClubsChange}></input>
                             </div>
                             <div className="col-md-2 uk-margin">
                                 <button className="club-btn uk-button uk-button-default" onClick={handleClubsAdd}>+</button>
                             </div>
                         </div>
                     </div>
-                    <a className="next3-btn uk-button uk-button-default" href="/signup4" onClick={handlePost}>Next</a>
+                    <a className="next3-btn uk-button uk-button-default" href="#" onClick={handlePost}>Next</a>
                 </div>
             </div>
         </section>

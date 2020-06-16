@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const usesController = require("../../controllers/usesController");
 
-router.route('/signup3')
+router.route('/')
     .post(usesController.create);
 
 module.exports = router;

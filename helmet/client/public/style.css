@@ -279,13 +279,16 @@ body {
 .bike-info input {
     margin: 20px;
 }
+.selected {
+    border: solid 1px #B2B2B2;
+}
 .far {
     font-size: 50px;
 }
-.up, .down {
+/* .up, .down {
     margin-top: 7px;
     margin-bottom: 7px;
-}
+} */
 .up:hover,
 .down:hover {
     color: gray;

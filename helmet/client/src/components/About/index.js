@@ -39,7 +39,7 @@ function About() {
     }
 
     function handleClick() {
-        let estimate = document.getElementsByClassName('estimate');
+        let estimate = document.getElementsByclassName('estimate');
         console.log(isNaN(estimate.value));
         if (estimate.value === '' || estimate.value == ' ') {
             alert('Please estimate the value of your bike.')
@@ -74,13 +74,13 @@ function About() {
             <div className="form-content">
                 <div className="about">
                     <h4>Tell us about your bike!</h4>
-                    <div class="row uk-margin">
-                        <div class="col-md-4">
+                    <div className="row uk-margin">
+                        <div className="col-md-4">
                             <p>Make:</p>
                         </div>
-                        <div class="col-md-8">
+                        <div className="col-md-8">
                             <input
-                                class="uk-input uk-form-width-large"
+                                className="uk-input uk-form-width-large"
                                 type="text"
                                 name="make"
                                 onChange={handleMakeChange}
@@ -88,13 +88,13 @@ function About() {
                             </input>
                         </div>
                     </div>
-                    <div class="row uk-margin">
-                        <div class="col-md-4">
+                    <div className="row uk-margin">
+                        <div className="col-md-4">
                             <p>Model:</p>
                         </div>
-                        <div class="col-md-8">
+                        <div className="col-md-8">
                             <input
-                                class="uk-input uk-form-width-large"
+                                className="uk-input uk-form-width-large"
                                 type="text"
                                 name="model"
                                 onChange={handleModelChange}
@@ -102,13 +102,13 @@ function About() {
                             </input>
                         </div>
                     </div>
-                    <div class="row uk-margin">
-                        <div class="col-md-4">
+                    <div className="row uk-margin">
+                        <div className="col-md-4">
                             <p>Year:</p>
                         </div>
-                        <div class="col-md-8">
+                        <div className="col-md-8">
                             <input
-                                class="uk-input uk-form-width-large"
+                                className="uk-input uk-form-width-large"
                                 type="text"
                                 name="year"
                                 onChange={handleYearChange}

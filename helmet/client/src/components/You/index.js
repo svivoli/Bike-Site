@@ -1,49 +1,72 @@
-import React from 'react';
+import React, { useState } from 'react';
+import API from '../../utils/API';
 
 function You() {
+    const [first, setFirst] = useState();
+    const [last, setLast] = useState();
+    const [email, setEmail] = useState();
+    const [month, setMonth] = useState();
+    const [day, setDay] = useState();
+    const [year, setYear] = useState();
+    const [zip, setZip] = useState();
+
+    function handlePost() {
+        API.createClient({
+            first: first,
+            last: last,
+            email: email,
+            dob_month: month,
+            dob_day: day,
+            dob_year: year,
+            zip: zip
+        })
+            .then(console.log("Client saved to database."))
+            .catch(err => console.log(err));
+    }
+
     return (
-        <section class="sign-up">
-            <div class="form-content">
-                <div class="you">
+        <section className="sign-up">
+            <div className="form-content">
+                <div className="you">
                     <h3>You</h3>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <input class="uk-input" type="text" placeholder="First"></input>
+                    <div className="row">
+                        <div className="col-md-6">
+                            <input className="uk-input" type="text" placeholder="First"></input>
                         </div>
-                        <div class="col-md-6">
-                            <input class="uk-input" type="text" placeholder="Last"></input>
-                        </div>
-                    </div>
-                    <div class="uk-margin">
-                        <div class="uk-inline">
-                            <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: mail"></span>
-                            <input class="uk-input" type="text" placeholder="email@domain.com"></input>
+                        <div className="col-md-6">
+                            <input className="uk-input" type="text" placeholder="Last"></input>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-4" style={{marginTop: '20px'}}>
+                    <div className="uk-margin">
+                        <div className="uk-inline">
+                            <span className="uk-form-icon uk-form-icon-flip" uk-icon="icon: mail"></span>
+                            <input className="uk-input" type="text" placeholder="email@domain.com"></input>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-md-4" style={{ marginTop: '20px' }}>
                             <p>Date of Birth:</p>
                         </div>
-                        <div class="col-md-2">
-                            <input class="uk-input" type="text" placeholder="Month"></input>
+                        <div className="col-md-2">
+                            <input className="uk-input" type="text" placeholder="Month"></input>
                         </div>
-                        <div class="col-md-2">
-                            <input class="uk-input" type="text" placeholder="Day"></input>
+                        <div className="col-md-2">
+                            <input className="uk-input" type="text" placeholder="Day"></input>
                         </div>
-                        <div class="col-md-2">
-                            <input class="uk-input" type="text" placeholder="Year"></input>
+                        <div className="col-md-2">
+                            <input className="uk-input" type="text" placeholder="Year"></input>
                         </div>
                     </div>
-                    <div class="row justify-content-md-center">
-                        <div class="col-md-3" style={{marginTop: '20px'}}>
+                    <div className="row justify-content-md-center">
+                        <div className="col-md-3" style={{ marginTop: '20px' }}>
                             <p>Zip:</p>
                         </div>
-                        <div class="col-md-3">
-                            <input class="uk-input" type="text"></input>
+                        <div className="col-md-3">
+                            <input className="uk-input" type="text"></input>
                         </div>
                     </div>
-                    <div class="uk-margin-large">
-                        <button type="submit" class="submit-btn uk-button uk-button-default">Submit</button>
+                    <div className="uk-margin-large">
+                        <button type="submit" className="submit-btn uk-button uk-button-default" onClickk={handlePost()}>Submit</button>
                     </div>
                 </div>
             </div>
