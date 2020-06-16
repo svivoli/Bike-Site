@@ -46,7 +46,7 @@ db.Frequency
 
 const usesSeed = [
     {
-        use: "recreation",
+        use: "racing",
         stolen: false,
         clubs: "los altos hills"
     }
@@ -69,7 +69,7 @@ const clientSeed = [
         first: "sarah",
         last: "last",
         email: "sarah@sarah.com",
-        dob_month: 01,
+        dob_month: 'Jan',
         dob_day: 01,
         dob_year: 1990,
         zip: 97239

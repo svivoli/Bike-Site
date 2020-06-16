@@ -8,51 +8,42 @@ function About() {
     const [value, setValue] = useState();
     const [checked, setChecked] = useState(false);
 
-    function handleMakeChange(event) {
-        if (event.target.name == 'make') {
-            setMake(event.target.value);
-        }
+    function handleMakeChange(e) {
+            setMake(e.target.value);
     }
 
-    function handleModelChange(event) {
-        if (event.target.name == 'model') {
-            setModel(event.target.value);
-        }
+    function handleModelChange(e) {
+            setModel(e.target.value);
     }
 
-    function handleYearChange(event) {
-        if (event.target.name == 'year') {
-            setYear(event.target.value);
-        }
+    function handleYearChange(e) {
+            setYear(e.target.value);
     }
 
-    function handleValueChange(event) {
-        if (event.target.name == 'value') {
-            setValue(event.target.value);
-        }
+    function handleValueChange(e) {
+            setValue(e.target.value);
     }
 
-    function handleCheck(event) {
-        if (event.target.name == 'agree') {
-            setChecked(true)
-        }
+    function handleCheck() {
+            setChecked(true);
     }
 
     function handleClick() {
-        let estimate = document.getElementsByclassName('estimate');
-        console.log(isNaN(estimate.value));
-        if (estimate.value === '' || estimate.value == ' ') {
+        if (value === undefined) {
             alert('Please estimate the value of your bike.')
+            return;
         }
-        if (!isNaN(estimate.value)) {
+        if (isNaN(value)) {
             alert('Estimated value must be a numerical value.')
+            return;
         }
         if (checked == false) {
             alert('You must agree to the Terms of Service & Privacy Policy to proceed.');
+            return;
         }
-        if (isNaN(estimate.value) && estimate.value != '' && estimate.value != ' ' && checked == true) {
+        if (!isNaN(value) && value != '' && value != ' ' && value != undefined && checked == true) {
             handlePost();
-            document.location.href = '/signup2';
+            // document.location.href = '/signup2';
         }
     }
 
@@ -66,6 +57,9 @@ function About() {
             estvalue: value
         })
             .then(console.log("Bike saved to database."))
+            .then(res=>{
+                console.log(res)
+            })
             .catch(err => console.log(err));
     };
 
@@ -170,7 +164,7 @@ function About() {
                         <div className="col-md-4">
                             <div className="uk-inline">
                                 <span className="uk-form-icon">$</span>
-                                <input className="estimate uk-input" type="text" name="value" onChange={handleValueChange}></input>
+                                <input className="estimate uk-input" type="text" name="value" value={value} onChange={handleValueChange}></input>
                             </div>
                         </div>
                     </div>
