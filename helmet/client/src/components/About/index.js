@@ -33,7 +33,7 @@ function About() {
             alert('Please estimate the value of your bike.')
             return;
         }
-        if (isNaN(value)) {
+        if (isNaN(value) || value.includes(' ')) {
             alert('Estimated value must be a numerical value.')
             return;
         }
@@ -43,7 +43,7 @@ function About() {
         }
         if (!isNaN(value) && value != '' && value != ' ' && value != undefined && checked == true) {
             handlePost();
-            // document.location.href = '/signup2';
+            document.location.href = '/signup2';
         }
     }
 
