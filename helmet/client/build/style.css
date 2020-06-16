@@ -1,0 +1,320 @@
+body {
+    /* background: gray; */
+    font-family: 'Spartan', sans-serif;
+}
+/* navbar */
+.uk-navbar-container {
+    height: 120px;
+    background-color: white !important;
+}
+.uk-navbar-left {
+    margin-left: 15%;
+}
+.uk-navbar-left h3 {
+    text-transform: uppercase;
+    font-family: 'Secular One', sans-serif;
+}
+.uk-navbar-left h5 {
+    font-family: 'Spartan', sans-serif;
+}
+.nav-menu {
+    margin-left: 15%;
+}
+#navlist {
+    font-family: 'Spartan', sans-serif !important;
+}
+.minified-nav {
+    display: none;
+}
+@media screen and (max-width: 812px) {
+    .min-logo {
+        padding-top: 10px;
+    }
+    .minified-nav {
+        padding-top: 15px;
+        display: block;
+    }
+    .large-nav {
+        display: none;
+    }
+}
+/* lead */
+.lead, .lead2 {
+    margin-right: -20px;
+    background-image: url('img/sunny.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.lead {
+    height: 800px;
+}
+.lead2 {
+    height: 400px;
+}
+.lead-title {
+    padding-top: 100px;
+}
+.bold {
+    font-weight: bold;
+}
+.lead-title h5 {
+    font-family: 'Spartan', sans-serif;
+    color: white;
+}
+.lead-title h1 {
+    text-transform: uppercase;
+    font-family: 'Secular One', sans-serif;
+    color: white;
+    font-size: 80px;
+}
+.start-btn {
+    margin-top: 220px;
+}
+.start-btn, .plans-btn, .next1-btn, .next2-btn, .next3-btn, .submit-btn {
+    background-color: black !important;
+    border: none;
+    color: white !important;
+}
+.start-btn:hover, .story-btn:hover {
+    background-color: rgba(2, 2, 2, 0.8) !important;
+    color: gray !important;
+}
+/* coverage */
+.coverage {
+    height: 680px;
+}
+.coverage-right {
+    height: 680px;
+    background-image: url('img/river.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.blurb {
+    margin-top: 75px;
+}
+.break {
+    margin-left: 29%;
+    width: 50px;
+    border-top: solid 3.5px black;
+}
+.blurb h1 {
+    padding-top: 30px;
+    margin-left: 28%;
+    font-family: 'Secular One', sans-serif;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+.coverage p {
+    margin-top: 75px;
+    margin-left: 28%;
+    margin-right: 75px;
+    text-align: left;
+}
+.plans-btn:hover {
+    color: gray !important;
+}
+@media screen and (max-width: 900px) {
+    .coverage p {
+        margin-top: 10%;
+    }
+    .plans-btn {
+        margin-top: 5% !important;
+    }
+}
+@media screen and (max-width: 800px) {
+    .coverage-right {
+        display: none;
+    }
+}
+/* ride */
+.ride {
+    height: 1300px;
+    background-image: url('img/path.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.ride-title {
+    padding-top: 75px;
+    margin-right: 28%;
+}
+@media screen and (max-width: 1200px) {
+    .ride-title {
+        margin-right: 0px;
+    }
+}
+.break2 {
+    margin-left: 24%;
+    width: 50px;
+    border-top: solid 4.5px black;
+}
+.ride-title h1 {
+    padding-top: 30px;
+    font-family: 'Secular One', sans-serif;
+    text-transform: uppercase;
+    font-size: 60px;
+    color: white;
+}
+.cards {
+    margin-top: 120px;
+}
+.card {
+    height: 300px;
+    border-radius: 0;
+    font-family: 'Spartan', sans-serif;
+    color: white;
+}
+@media screen and (max-width: 993px) {
+    .card {
+        height: 220px;
+    }
+    .card p {
+        padding: 0 40px 0 40px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .card {
+        height: 420px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .card {
+        margin-bottom: 30px;
+    }
+    .ride {
+        height: 1975px;
+    }
+}
+.card h5 {
+    padding: 30px 0 20px;
+    font-family: 'Spartan', sans-serif;
+    color: white;
+    font-weight: bold;
+}
+.card p {
+    margin: 25px 25px 0 25px;
+}
+.arrow1 {
+    padding-top: 65px;
+    font-size: 28px;
+}
+.arrow {
+    padding-top: 40px;
+    font-size: 28px;
+}
+@media screen and (max-width: 1200px) {
+    .arrow1, .arrow {
+        display: none;
+    }
+}
+.cy {
+    background: rgb(242,190,93);
+}
+.cr {
+    background: rgb(253,96,97);
+}
+.cb {
+    background: rgb(85,111,183)
+}
+.cg {
+    background: rgb(118,203,170);
+}
+.story-btn {
+    margin-top: 300px;
+    height: 150px;
+    width: 150px;
+    background-color: black;
+    border: none;
+    border-radius: 50%;
+    color: white;
+}
+/* * Get Started * */
+/* about */
+.sign-up {
+    text-align: center;
+}
+.form-content {
+    margin: 100px;
+    width: 700px;
+    display: inline-block;
+}
+.about h4 {
+    font-family: 'Spartan', sans-serif;
+}
+.about p {
+    padding-top: 10px;
+}
+.terms {
+    margin: 60px 0 30px;
+
+}
+.next1-btn {
+    margin-top: 30px;
+}
+.next1-btn:hover, .next2-btn:hover, .next3-btn:hover, .submit-btn:hover {
+    background-color: black !important;
+    color: gray !important;
+}
+/* often */
+.often h4 {
+    padding-bottom: 50px;
+    font-family: 'Spartan', sans-serif;
+}
+.often input {
+    margin: 10px;
+}
+.next2-btn {
+    margin-top: 70px;
+}
+/* bike-info */
+.bike-info h4 {
+    font-family: 'Spartan', sans-serif;
+}
+.bike-info input {
+    margin: 20px;
+}
+.selected {
+    border: solid 1px #B2B2B2;
+}
+.far {
+    font-size: 50px;
+}
+/* .up, .down {
+    margin-top: 7px;
+    margin-bottom: 7px;
+} */
+.up:hover,
+.down:hover {
+    color: gray;
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+}
+.active {
+    color: gray;
+}
+.club-list {
+    list-style: none;
+}
+.next3-btn {
+    margin-top: 20px;
+}
+/* you */
+.you h3 {
+    padding-bottom: 30px;
+    font-family: 'Spartan', sans-serif;
+}
+.you .uk-input {
+    margin: 10px;
+}
+.active1 {
+    border: solid 1px black;
+}
+/* .you button {
+    margin-top: 30px;
+} */
