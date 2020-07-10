@@ -4,9 +4,8 @@ import API from '../../utils/API';
 function Form() {
     const [make, setMake] = useState();
     const [model, setModel] = useState();
-    const [year, setYear] = useState();
+    const [bikeYear, setBikeYear] = useState();
     const [value, setValue] = useState();
-    const [checked, setChecked] = useState(false);
 
     const [often, setOften] = useState();
 
@@ -38,8 +37,8 @@ function Form() {
         setModel(e.target.value);
     }
 
-    function handleYearChange(e) {
-        setYear(e.target.value);
+    function handleBikeYearChange(e) {
+        setBikeYear(e.target.value);
     }
 
     function handleValueChange(e) {
@@ -72,29 +71,6 @@ function Form() {
         if ('Other' === clicked) {
             setOther('selected');
             setUses(uses_array => [...uses_array, 'Other']);
-        }
-    }
-
-    function handleCheck() {
-        setChecked(true);
-    }
-
-    function handleClick() {
-        if (value === undefined) {
-            alert('Please estimate the value of your bike.')
-            return;
-        }
-        if (isNaN(value) || value.includes(' ')) {
-            alert('Estimated value must be a numerical value.')
-            return;
-        }
-        if (checked == false) {
-            alert('You must agree to the Terms of Service & Privacy Policy to proceed.');
-            return;
-        }
-        if (!isNaN(value) && value != '' && value != ' ' && value != undefined && checked == true) {
-            handlePost();
-            document.location.href = '/signup2';
         }
     }
 
@@ -142,7 +118,7 @@ function Form() {
         API.createBike({
             make: make,
             model: model,
-            year: year,
+            year: bikeYear,
             estvalue: value
         })
             .then(console.log("Bike saved to database."))
@@ -224,7 +200,7 @@ function Form() {
                                     className="uk-input uk-form-width-large"
                                     type="text"
                                     name="year"
-                                    onChange={handleYearChange}
+                                    onChange={handleBikeYearChange}
                                 >
                                 </input>
                             </div>
@@ -240,13 +216,6 @@ function Form() {
                                 </div>
                             </div>
                         </div>
-                        <div className="terms">
-                            <p>Terms of Service <a href="#">View</a></p>
-                            <p>Privacy Policy <a href="#">View</a></p>
-                            <label><input className="agree uk-checkbox" type="checkbox" name="agree" checked={checked} onClick={handleCheck}></input> Agree to Terms of Service & Privacy
-                        Policy*</label>
-                        </div>
-                        <button className="next1-btn uk-button uk-button-default" onClick={handleClick}>Next</button>
                     </div>
                 </div>
             </section>
@@ -258,7 +227,6 @@ function Form() {
                         <input type="button" className="med uk-button uk-button-default" value="10+ Days/Month" onClick={handleOftenChange}></input>
                         <input type="button" className="heavy uk-button uk-button-default" value="Daily" onClick={handleOftenChange}></input>
                         <br></br>
-                        <a className="next2-btn uk-button uk-button-default" href="#" onClick={handlePost}>Next</a>
                     </div>
                 </div>
             </section>
@@ -302,7 +270,6 @@ function Form() {
                                 </div>
                             </div>
                         </div>
-                        <a className="next3-btn uk-button uk-button-default" href="/signup4" onClick={handlePost}>Next</a>
                     </div>
                 </div>
             </section>

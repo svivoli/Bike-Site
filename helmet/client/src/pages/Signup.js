@@ -1,13 +1,13 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import About from '../components/About';
+import Terms from '../components/Terms';
 
 function SignUp() {
 
     return (
         <div>
             <Navbar />
-            <About />
+            <Terms />
         </div>
     )
 };

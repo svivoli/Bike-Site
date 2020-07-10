@@ -1,13 +1,13 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import Often from '../components/Often';
+import Form from '../components/Form';
 
 
 function SignUp2() {
     return (
         <div>
             <Navbar />
-            <Often />
+            <Form />
         </div>
     )
 };

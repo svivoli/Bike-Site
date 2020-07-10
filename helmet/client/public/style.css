@@ -1,4 +1,4 @@
-body {
+body, html {
     /* background: gray; */
     font-family: 'Spartan', sans-serif;
 }
@@ -365,3 +365,16 @@ body {
   #flyoutMenu h2 a:hover {
     text-decoration: underline;
   }
+.terms-privacy {
+    text-align: center;
+}
+.terms h4, p {
+    font-family: 'Spartan', sans-serif;
+}
+.terms-blurb {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.agree {
+    padding: 10px;
+}
