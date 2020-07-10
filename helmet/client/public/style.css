@@ -3,8 +3,19 @@ body {
     font-family: 'Spartan', sans-serif;
 }
 /* navbar */
-.uk-navbar-container {
-    height: 120px;
+.logo-div {
+    margin-top: 10px;
+    margin-left: 120px;
+    margin-bottom: 12px;
+}
+.logo-div h3 {
+    text-transform: uppercase;
+    font-family: 'Secular One', sans-serif;
+}
+.logo-div h5 {
+    font-family: 'Spartan', sans-serif;
+}
+.nav-container {
     background-color: white !important;
 }
 .uk-navbar-left {
@@ -34,7 +45,7 @@ body {
         padding-top: 15px;
         display: block;
     }
-    .large-nav {
+    .nav-container {
         display: none;
     }
 }
@@ -318,3 +329,39 @@ body {
 /* .you button {
     margin-top: 30px;
 } */
+
+.hamburger {
+    margin-left: 80%;
+}
+
+  #flyoutMenu {
+    width: 50vw;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: transform .3s
+                cubic-bezier(0, .52, 0, 1);
+    overflow: scroll;
+    z-index: 1000;
+  }
+   
+  #flyoutMenu.hide {
+    transform: translate3d(-100vw, 0, 0);
+  }
+   
+  #flyoutMenu.show {
+    transform: translate3d(0vw, 0, 0);
+    overflow: hidden;
+  }
+   
+  #flyoutMenu h2 a {
+    color: #333;
+    margin-left: 15px;
+    text-decoration: none;
+  }
+   
+  #flyoutMenu h2 a:hover {
+    text-decoration: underline;
+  }
