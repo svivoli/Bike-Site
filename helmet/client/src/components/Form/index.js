@@ -114,37 +114,20 @@ function Form() {
     }
 
     function handlePost() {
+        if (isNaN(value) || value.includes(' ')) {
+            alert('Estimated value must be a numerical value.')
+            return;
+        }
         console.log("HEY FROM HANDLEPOST")
-        API.createBike({
+        API.createUser({
             make: make,
             model: model,
             year: bikeYear,
-            estvalue: value
-        })
-            .then(console.log("Bike saved to database."))
-            .then(res => {
-                console.log(res)
-            })
-            .catch(err => console.log(err));
-        if (often == undefined) {
-            alert('Please make a selection');
-        }
-        else {
-            API.createFrequency({
-                often: often
-            })
-                .then(console.log("Frequency saved to database."))
-                .catch(err => console.log(err))
-                .then(document.location.href = '/signup3');
-        }
-        API.createUses({
+            estvalue: value,
+            often: often,
             use: uses,
             stolen: stolen,
-            clubs: clubs
-        })
-            .then(console.log("Uses saved to database."))
-            .catch(err => console.log(err));
-        API.createClient({
+            clubs: clubs,
             first: first,
             last: last,
             email: email,
@@ -153,7 +136,10 @@ function Form() {
             dob_year: year,
             zip: zip
         })
-            .then(console.log("Client saved to database."))
+            .then(console.log("User data saved to database."))
+            .then(res => {
+                console.log(res)
+            })
             .catch(err => console.log(err));
     };
 
@@ -216,6 +202,7 @@ function Form() {
                                 </div>
                             </div>
                         </div>
+                        <p className="arrow">&#8595;</p>
                     </div>
                 </div>
             </section>
@@ -228,6 +215,7 @@ function Form() {
                         <input type="button" className="heavy uk-button uk-button-default" value="Daily" onClick={handleOftenChange}></input>
                         <br></br>
                     </div>
+                    <p className="arrow">&#8595;</p>
                 </div>
             </section>
             <section className="sign-up">
@@ -270,6 +258,7 @@ function Form() {
                                 </div>
                             </div>
                         </div>
+                        <p className="arrow">&#8595;</p>
                     </div>
                 </div>
             </section>

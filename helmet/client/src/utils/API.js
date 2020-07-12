@@ -13,6 +13,9 @@ export default {
     createClient: function (clientData) {
         return axios.post("/api/client", clientData);
     },
+    createUser: function (userData) {
+        return axios.post("/api/user", userData);
+    },
     getPostedBikes: function () {
         return axios.get("/api/bike");
     },
@@ -24,5 +27,8 @@ export default {
     },
     getPostedClients: function () {
         return axios.get("/api/client");
+    },
+    getPostedUsers: function () {
+        return axios.get("/api/user");
     }
 }

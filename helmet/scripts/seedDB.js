@@ -5,67 +5,16 @@ const MONGO_URI = process.env.MONGODB_URI || "mongodb://localhost/helmet";
 mongoose.connect(MONGO_URI, { useNewUrlParser: true })
     .then(console.log(`MongoDB connected at ${MONGO_URI}`));
 
-const bikeSeed = [
+const userSeed = [
     {
         make: "make",
         model: "model",
         year: 2019,
-        estvalue: 1000
-    }
-];
-
-db.Bike
-    .remove({})
-    .then(() => db.Bike.collection.insertMany(bikeSeed))
-    .then(data => {
-        console.log(data.result.n + " records inserted!");
-        process.exit(0);
-    })
-    .catch(err => {
-        console.error(err);
-        process.exit(1);
-    });
-
-const frequencySeed = [
-    {
-        often: "5-10"
-    }
-];
-
-db.Frequency
-    .remove({})
-    .then(() => db.Frequency.collection.insertMany(frequencySeed))
-    .then(data => {
-        console.log(data.result.n + " records inserted!");
-        process.exit(0);
-    })
-    .catch(err => {
-        console.error(err);
-        process.exit(1);
-    });
-
-const usesSeed = [
-    {
+        estvalue: 1000,
+        often: "5-10",
         use: "racing",
         stolen: false,
-        clubs: "los altos hills"
-    }
-];
-
-db.Uses
-    .remove({})
-    .then(() => db.Uses.collection.insertMany(usesSeed))
-    .then(data => {
-        console.log(data.result.n + " records inserted!");
-        process.exit(0);
-    })
-    .catch(err => {
-        console.error(err);
-        process.exit(1);
-    });
-
-const clientSeed = [
-    {
+        clubs: "los altos hills",
         first: "sarah",
         last: "last",
         email: "sarah@sarah.com",
@@ -76,9 +25,9 @@ const clientSeed = [
     }
 ];
 
-db.Client
+db.User
     .remove({})
-    .then(() => db.Client.collection.insertMany(clientSeed))
+    .then(() => db.User.collection.insertMany(userSeed))
     .then(data => {
         console.log(data.result.n + " records inserted!");
         process.exit(0);
