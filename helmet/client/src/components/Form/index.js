@@ -148,7 +148,7 @@ function Form() {
             <section className="sign-up">
                 <div className="form-content">
                     <div className="about">
-                        <h4 style={{marginBottom: '40px'}}>Tell us about your bike!</h4>
+                        <h4 style={{ marginBottom: '40px' }}>Tell us about your bike!</h4>
                         <div className="row uk-margin">
                             <div className="col-md-4">
                                 <p>Make:</p>
@@ -211,9 +211,9 @@ function Form() {
                     <div className="often">
                         <h4>How often do you ride?</h4>
                         <div className="uk-margin-medium">
-                        <input type="button" className="light uk-button uk-button-default" value="0-5 Days/Month" onClick={handleOftenChange}></input>
-                        <input type="button" className="med uk-button uk-button-default" value="10+ Days/Month" onClick={handleOftenChange}></input>
-                        <input type="button" className="heavy uk-button uk-button-default" value="Daily" onClick={handleOftenChange}></input>
+                            <input type="button" className="light uk-button uk-button-default" value="0-5 Days/Month" onClick={handleOftenChange}></input>
+                            <input type="button" className="med uk-button uk-button-default" value="10+ Days/Month" onClick={handleOftenChange}></input>
+                            <input type="button" className="heavy uk-button uk-button-default" value="Daily" onClick={handleOftenChange}></input>
                         </div>
                     </div>
                     <p className="arrow-down">&#8595;</p>
@@ -267,7 +267,7 @@ function Form() {
                 <div className="form-content">
                     <div className="you">
                         <h3>You</h3>
-                        <div className="row">
+                        <div className="name row">
                             <div className="col-md-6">
                                 <input className="uk-input" type="text" placeholder="First" onChange={e => setFirst(e.target.value)}></input>
                             </div>
@@ -491,9 +491,9 @@ function Form() {
                                 <input className="uk-input" type="text" onChange={e => setZip(e.target.value)}></input>
                             </div>
                         </div>
-                        <div className="uk-margin-large">
-                            <button type="submit" className="submit-btn uk-button uk-button-default" onClick={handlePost}>Submit</button>
-                        </div>
+                    </div>
+                    <div className="uk-margin-large">
+                        <button type="submit" className="submit-btn uk-button uk-button-default" onClick={handlePost}>Submit</button>
                     </div>
                 </div>
             </section>
