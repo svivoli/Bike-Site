@@ -215,8 +215,8 @@ function Form() {
                         <input type="button" className="med uk-button uk-button-default" value="10+ Days/Month" onClick={handleOftenChange}></input>
                         <input type="button" className="heavy uk-button uk-button-default" value="Daily" onClick={handleOftenChange}></input>
                         </div>
-                        <p className="arrow-down">&#8595;</p>
                     </div>
+                    <p className="arrow-down">&#8595;</p>
                 </div>
             </section>
             <section className="sign-up">
