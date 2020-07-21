@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom'; 
 import MenuContainer from '../MenuContainer';
 
 function Navbar() {
@@ -17,10 +18,30 @@ function Navbar() {
           <div className="col-md-4">
 
             <ul className="uk-navbar-nav">
-              <li className="uk-active"><a href="/">Home</a></li>
-              <li><a href="/signup">Get Started</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Blog</a></li>
+              <li><NavLink
+              exact
+              activeClassName="navbar__link--active"
+              className="navbar__link"
+              to="/"
+              >Home</NavLink></li>
+              <li><NavLink
+              exact
+              activeClassName="navbar__link--active"
+              className="navbar__link"
+              to="/signup"
+              >Get Started</NavLink></li>
+              <li><NavLink
+              exact
+              activeClassName="navbar__link--active"
+              className="navbar__link"
+              to="/about"
+              >About</NavLink></li>
+              <li><NavLink
+              exact
+              activeClassName="navbar__link--active"
+              className="navbar__link"
+              to="/blog"
+              >Blog</NavLink></li>
             </ul>
 
           </div>

@@ -148,7 +148,7 @@ function Form() {
             <section className="sign-up">
                 <div className="form-content">
                     <div className="about">
-                        <h4>Tell us about your bike!</h4>
+                        <h4 style={{marginBottom: '40px'}}>Tell us about your bike!</h4>
                         <div className="row uk-margin">
                             <div className="col-md-4">
                                 <p>Make:</p>
@@ -202,27 +202,28 @@ function Form() {
                                 </div>
                             </div>
                         </div>
-                        <p className="arrow">&#8595;</p>
                     </div>
+                    <p className="arrow-down">&#8595;</p>
                 </div>
             </section>
             <section className="sign-up">
                 <div className="form-content">
                     <div className="often">
                         <h4>How often do you ride?</h4>
+                        <div className="uk-margin-medium">
                         <input type="button" className="light uk-button uk-button-default" value="0-5 Days/Month" onClick={handleOftenChange}></input>
                         <input type="button" className="med uk-button uk-button-default" value="10+ Days/Month" onClick={handleOftenChange}></input>
                         <input type="button" className="heavy uk-button uk-button-default" value="Daily" onClick={handleOftenChange}></input>
-                        <br></br>
+                        </div>
+                        <p className="arrow-down">&#8595;</p>
                     </div>
-                    <p className="arrow">&#8595;</p>
                 </div>
             </section>
             <section className="sign-up">
                 <div className="form-content">
                     <div className="bike-info">
                         <h4>What do you use your bike for (primarily)?</h4>
-                        <div className="uses uk-margin-large">
+                        <div className="uses uk-margin-medium">
                             <input type="button" className={`light uk-button uk-button-default ${commuting}`} value="Commuting" onClick={handleUsesChange}></input>
                             <input type="button" className={`light uk-button uk-button-default ${pleasure}`} value="Pleasure" onClick={handleUsesChange}></input>
                             <input type="button" className={`light uk-button uk-button-default ${exercise}`} value="Exercise" onClick={handleUsesChange}></input>
@@ -237,14 +238,14 @@ function Form() {
                         </div>
                         <h4>Have you ever had a bike stolen?</h4>
                         <div className="row justify-content-md-center uk-margin-large">
-                            <div className="up col-md-4 uk-margin-large">
+                            <div className="up col-md-4 uk-margin">
                                 <i className={`up far fa-thumbs-up ${active1}`} aria-hidden="true" onClick={handleStolenTrue}></i>
                             </div>
                             <div className="down col-md-4">
                                 <i className={`down far fa-thumbs-down ${active2}`} aria-hidden="true" onClick={handleStolenFalse}></i>
                             </div>
                         </div>
-                        <h4>List your bike clubs below</h4>
+                        <h4>Add your bike clubs below</h4>
                         <div className="uk-margin">
                             <div>
                                 <ul className="club-list"></ul>
@@ -258,7 +259,7 @@ function Form() {
                                 </div>
                             </div>
                         </div>
-                        <p className="arrow">&#8595;</p>
+                        <p className="arrow-down">&#8595;</p>
                     </div>
                 </div>
             </section>
