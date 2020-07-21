@@ -259,8 +259,8 @@ function Form() {
                                 </div>
                             </div>
                         </div>
-                        <p className="arrow-down">&#8595;</p>
                     </div>
+                    <p className="arrow-down">&#8595;</p>
                 </div>
             </section>
             <section className="sign-up">
