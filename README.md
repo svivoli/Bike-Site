@@ -16,7 +16,7 @@ Website for an up and coming bike insurance company. Users can learn about the p
 ## Website Components
 
 1. Home page
-- Navbar with logo and tabs
+- Sticky navbar with logo and links
     - Responsive hamburger menu
 - Sections with information, parallax images, linked buttons, cards
 - Bootstrap grid system
