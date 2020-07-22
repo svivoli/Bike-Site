@@ -33,29 +33,29 @@ Website for an up and coming bike insurance company. Users can learn about the p
 
 The home page consists of 3 sections - a top banner, a coverage section, and a section featuring reasons to sign up.
  
-[Home Banner]!(homebanner.png)
+[Home Banner](homebanner.png)
 
 The banner features text as well as a button that directs to the sign up page.
 
-[Home Coverage]!(homecoverage.png)
+[Home Coverage](homecoverage.png)
 
 The Coverage section is split down the middle, with an image on the right and information on the left. A button will eventually direct users to a page with the different plans offered by the company.
 
-[Home Cards]!(homecards.png)
+[Home Cards](homecards.png)
 
-[Home Bottom]!(homebottom.png)
+[Home Bottom](homebottom.png)
 
 The final section features four cards, each with a reason to "Ride With Helmet", as well as a button that directs to the About page.
 
-[Terms Conditions]!(termsconditions.png)
+[Terms Conditions](termsconditions.png)
 
 Before users can proceed with the sign up process, they must read and accept the Terms of Service and Privacy Policy documents.
 
-[Get Started]!(getstarted.png)
+[Get Started](getstarted.png)
 
 The Get Started (sign up) page features a continuous form, broken up into 4 sections (the first is shown here). Once the user has filled out the form and clicked submit, their data is saved via MongoDB.
 
-[Blog]!(blog.png)
+[Blog](blog.png)
 
 The Blog tab directs users to the founder's Medium blog.
 
