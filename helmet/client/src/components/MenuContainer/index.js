@@ -28,7 +28,7 @@ function MenuContainer() {
 
         <div className="hamburger">
         <div class="row">
-        <MenuButton handleMouseDown={handleMouseDown} />
+        <MenuButton className="hamburger-btn" handleMouseDown={handleMouseDown} />
         <h3>Helmet</h3>
         </div>
         </div>
