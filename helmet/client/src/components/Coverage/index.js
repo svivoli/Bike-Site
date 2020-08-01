@@ -2,6 +2,10 @@ import React from 'react';
 
 
 function Coverage() {
+  function handleClick() {
+    alert("Coming Soon!");
+  }
+
     return(
         <section className="coverage">
         <div className="row">
@@ -14,7 +18,7 @@ function Coverage() {
               newbie - you can protect your bike today from getting stolen or broken. Our plans give riders the
               ease of mind by knowing they are always protected with Helmet.</p>
             <p uk-margin>
-              <button className="plans-btn uk-button uk-button-default">See Our Plans</button>
+              <button className="plans-btn uk-button uk-button-default" onClick={handleClick}>See Our Plans</button>
             </p>
           </div>
           <div className="col-md-6 col-sm-12 coverage-right">
