@@ -155,7 +155,7 @@ function Form() {
                             </div>
                             <div className="col-md-8">
                                 <input
-                                    className="uk-input uk-form-width-large"
+                                    className="uk-input"
                                     type="text"
                                     name="make"
                                     onChange={handleMakeChange}
@@ -169,7 +169,7 @@ function Form() {
                             </div>
                             <div className="col-md-8">
                                 <input
-                                    className="uk-input uk-form-width-large"
+                                    className="uk-input"
                                     type="text"
                                     name="model"
                                     onChange={handleModelChange}
@@ -183,7 +183,7 @@ function Form() {
                             </div>
                             <div className="col-md-8">
                                 <input
-                                    className="uk-input uk-form-width-large"
+                                    className="uk-input"
                                     type="text"
                                     name="year"
                                     onChange={handleBikeYearChange}

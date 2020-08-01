@@ -285,10 +285,16 @@ html {
   color: white;
 }
 /* * Get Started * */
-/* about */
 .sign-up {
+  display: center;
   text-align: center;
 }
+@media screen and (max-width: 900px) {
+  .sign-up {
+    display: flex;
+  }
+}
+/* about */
 .form-content {
   margin: 100px;
   width: 700px;
