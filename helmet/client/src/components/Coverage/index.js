@@ -3,7 +3,11 @@ import React from 'react';
 
 function Coverage() {
   function handleClick() {
-    alert("Coming Soon!");
+    let msg = "Coming soon!";
+    const line_break = "\r\n";
+    msg += line_break;
+    msg += "Sign up today and receive an email when our plans are finalized.";
+    alert(msg);
   }
 
     return(
