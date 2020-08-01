@@ -63,6 +63,23 @@ html {
     display: none;
   }
 }
+@media screen and (max-width: 800px) {
+  .hamburger {
+    margin-right: -50%;
+  }
+}
+/* menu container */
+#flyoutMenu {
+  margin-top: 20px;
+}
+.menu-title {
+  font-size: 20px;
+  font-family: "Spartan", sans-serif;
+}
+.menu-title:hover {
+  color: #999999 !important;
+  text-decoration: none !important;
+}
 /* lead */
 .lead,
 .lead2 {

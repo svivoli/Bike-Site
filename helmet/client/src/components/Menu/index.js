@@ -9,13 +9,12 @@ class Menu extends Component {
     }
  
     return (
-      <div id="flyoutMenu"
-           onMouseDown={this.props.handleMouseDown} 
+      <div id="flyoutMenu" 
            className={visibility}>
-        <h2><a href="#">Home</a></h2>
-        <h2><a href="#">About</a></h2>
-        <h2><a href="#">Contact</a></h2>
-        <h2><a href="#">Search</a></h2>
+        <h2><a className="menu-title" href="/">Home</a></h2>
+        <h2><a className="menu-title" href="/signup">Get Started</a></h2>
+        <h2><a className="menu-title" href="/about">About</a></h2>
+        <h2><a className="menu-title" href="/blog">Blog</a></h2>
       </div>
     );
   }
