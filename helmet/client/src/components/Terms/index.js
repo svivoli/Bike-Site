@@ -8,11 +8,11 @@ function Terms() {
     }
 
     function handleClick() {
-        if (checked == false) {
+        if (checked === false) {
             alert('You must agree to the Terms of Service & Privacy Policy to proceed.');
             return;
         }
-        if (checked == true) {
+        if (checked === true) {
             document.location.href = '/signup2';
         }
     }

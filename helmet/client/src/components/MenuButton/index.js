@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import { HamburgerButton } from 'react-hamburger-button';
-import PropTypes from "prop-types";
 
 function MenuButton(props) {
     const [open, setOpen] = useState(false);
-    const isOpen = props.isOpen || false;
     // constructor(props, context) {
     //     super(props, context);
 

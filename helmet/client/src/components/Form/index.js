@@ -51,7 +51,6 @@ function Form() {
 
     function handleUsesChange(e) {
         const clicked = e.target.value;
-        let uses_array = uses;
         if ('Commuting' === clicked) {
             setCommuting('selected');
             setUses(uses_array => [...uses_array, 'Commuting']);
@@ -109,7 +108,6 @@ function Form() {
         li.innerText = list_item;
         club_list.appendChild(li);
         setClubinput('');
-        let club_array = clubs;
         setClubs(club_array => [...club_array, clubinput]);
     }
 
