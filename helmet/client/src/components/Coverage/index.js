@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 function Coverage() {
   function handleClick() {
     let msg = "Coming soon!";

@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import BikeInfo from '../components/BikeInfo';
+import BikeInfo from '../components/Form3';
 
 
 function SignUp3() {

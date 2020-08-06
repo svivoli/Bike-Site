@@ -5,6 +5,7 @@ import SignUp from './pages/Signup';
 import SignUp2 from './pages/Signup2';
 import SignUp3 from './pages/Signup3';
 import SignUp4 from './pages/Signup4';
+import About from './pages/About';
 import './App.css';
 
 function App() {
@@ -26,6 +27,9 @@ function App() {
           </Route>
           <Route exact path="/signup4">
             <SignUp4 />
+          </Route>
+          <Route exact path="/about">
+            <About />
           </Route>
           <Route path="/blog" component={() => {
             window.location.href = 'https://medium.com/@dtrembois';

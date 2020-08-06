@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import API from '../../utils/API';
 
-function Often() {
+function Form2() {
     const [often, setOften] = useState();
 
     function handleOftenChange(event) {
@@ -38,4 +38,4 @@ function Often() {
     )
 };
 
-export default Often;
+export default Form2;

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import API from '../../utils/API';
 
-function About() {
+function Form1() {
     const [make, setMake] = useState();
     const [model, setModel] = useState();
     const [year, setYear] = useState();
@@ -181,4 +181,4 @@ function About() {
     )
 };
 
-export default About;
+export default Form1;

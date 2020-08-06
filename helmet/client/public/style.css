@@ -448,3 +448,19 @@ p {
 .arrow-down {
   font-size: 28px;
 }
+/* About */
+.about-page {
+  text-align: center;
+}
+.about-main {
+  margin: 20px 100px 50px 100px;
+}
+.about-main h1 {
+  margin-bottom: 20px;
+  font-family: "Secular One", sans-serif;
+  text-transform: uppercase;
+}
+.about-main h5 {
+  font-family: "Spartan", sans-serif;
+}
+/*  */

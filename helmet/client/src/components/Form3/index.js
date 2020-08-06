@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import API from '../../utils/API';
 
-function BikeInfo() {
+function Form3() {
     const [uses, setUses] = useState([]);
     const [commuting, setCommuting] = useState();
     const [pleasure, setPleasure] = useState();
@@ -138,4 +138,4 @@ function BikeInfo() {
     )
 };
 
-export default BikeInfo;
+export default Form3;
