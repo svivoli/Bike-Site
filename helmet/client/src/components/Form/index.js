@@ -139,6 +139,8 @@ function Form() {
                 console.log(res)
             })
             .catch(err => console.log(err));
+        alert("Thank you! We will reach out when service is available in your area.");
+        document.location.href = "/";
     };
 
     return (
