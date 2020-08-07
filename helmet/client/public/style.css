@@ -47,6 +47,12 @@ html {
 .minified-nav {
   display: none;
 }
+.logo-div {
+  margin-left: 20% !important;
+}
+.nav-links {
+  margin-left: -5% !important;
+}
 @media screen and (max-width: 900px) {
   .min-logo {
     padding-top: 10px;
@@ -301,7 +307,7 @@ html {
     display: flex;
   }
   .form-content {
-    margin: 20px !important;
+    margin: auto !important;
   }
 }
 /* about */

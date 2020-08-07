@@ -15,7 +15,7 @@ function Navbar() {
             </div>
 
           </div>
-          <div className="col-md-4">
+          <div className="nav-links col-md-4">
 
             <ul className="uk-navbar-nav">
               <li><NavLink
