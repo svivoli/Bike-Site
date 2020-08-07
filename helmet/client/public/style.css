@@ -22,6 +22,9 @@ html {
   text-transform: uppercase;
   font-family: "Secular One", sans-serif;
 }
+.logo-div a:hover {
+  text-decoration: none;
+}
 .logo-div h5 {
   font-family: "Spartan", sans-serif;
 }
