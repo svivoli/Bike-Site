@@ -42,7 +42,7 @@ function Ride() {
           </div>
         </div>
   
-        <button className="story-btn uk-button uk-button-default">Our Story</button>
+        <a className="story-btn uk-button uk-button-default" href="/about">Our Story</a>
       </section>
     )
 };
